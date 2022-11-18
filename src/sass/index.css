@@ -1,0 +1,89 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --accent-color: #86e543;
+  --main-color: #01383a;
+  --text-color: #ffffff;
+  --second-text-color: #8d9289;
+  --footer-color: #001414;
+  --backdrop-color: rgba(0, 20, 20, 0.8);
+  --line-top: #7be34a;
+  --line-bottom: #28780d;
+  --main-font: "Roboto", sans-serif;
+}
+
+.is-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section {
+  padding-top: 40px;
+  padding-bottom: 48px;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 120px 0;
+  }
+}
+
+.container {
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
+}/*# sourceMappingURL=index.css.map */
