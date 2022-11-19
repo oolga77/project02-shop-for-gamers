@@ -1,0 +1,219 @@
+.sale1 {
+  height: 100px;
+}
+.sale {
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  // padding-top: 48px;
+  padding-bottom: 48px;
+  @include tablet {
+    padding-bottom: 120px;
+  }
+  background-image: url(../images/img-sale/fon-sale-mobile--x1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/img-sale/fon-sale-mobile--x2.jpg);
+  }
+  @include tablet {
+    background-image: url(../images/img-sale/fon-sale-tablet--x1.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/img-sale/fon-sale-tablet--x2.jpg);
+    }
+  }
+  @include desktop {
+    max-width: 1600px;
+    background-image: url(../images/img-sale/fon-sale-desk--x1.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/img-sale/fon-sale-desk--x2.jpg);
+    }
+  }
+}
+
+.section-title {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  @include font(600, 24, 1.17, null);
+  color: #ffffff;
+  margin-bottom: 35px;
+  padding-left: 64px;
+  @include tablet {
+    padding-left: 102px;
+    @include font(600, 56, 1.18, null);
+  }
+}
+
+.sale__decor {
+  position: absolute;
+  top: 27px;
+  @include tablet {
+    top: 67px;
+  }
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 8px;
+  border: 1px double #7be34a;
+  box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
+}
+
+.sale__wrap {
+  @include tablet {
+    @media screen and (max-width: 1279px) {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      padding-left: 40px;
+      padding-right: 40px;
+      margin-bottom: 28px;
+    }
+    @include desktop {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.sale__list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  @include desktop {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+
+.sale__list-tablet {
+  display: none;
+  @include tablet {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 38px;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+
+.sale-desktop {
+  display: none;
+  @include desktop {
+    display: block;
+  }
+}
+
+.sale-mobile {
+  @include desktop {
+    display: none;
+  }
+}
+
+.sale__item {
+  flex-basis: 100%;
+  padding-bottom: 20px;
+  @media screen and (max-width: 767px) {
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 24px;
+    }
+  }
+  @include tablet {
+    @media screen and (max-width: 1279px) {
+      flex-basis: calc((100% - 38px) / 2);
+      &:not(:nth-last-child(-n + 1)) {
+        margin-bottom: 32px;
+      }
+      // &:nth-last-child(-n + 1) {
+      //   margin-bottom: 28px;
+      // }
+    }
+  }
+  @include desktop {
+    flex-basis: calc((100% - 60px) / 4);
+    &:not(:nth-child(5n + 4)) {
+      margin-right: 20px;
+    }
+  }
+}
+
+.sale__link {
+  display: block;
+  // max-width: 285px;
+}
+
+.sale__img {
+  margin-bottom: 8px;
+  border-radius: 12px;
+}
+
+.sale__content {
+  padding-left: 8px;
+  padding-right: 16px;
+  max-width: 285px;
+}
+
+.sale__text {
+  margin-bottom: 8px;
+  font-family: 'Roboto';
+  font-style: normal;
+  @include font(600, 22, 1.18, null);
+  color: var(--accent-color);
+}
+
+.sale__price-wrap {
+  display: flex;
+  justify-content: space-between;
+  // justify-content: flex-start;
+  align-items: center;
+  // gap: 80px;
+}
+
+.sale__price {
+  font-family: 'Roboto';
+  font-style: normal;
+  @include font(600, 14, 1, null);
+  text-decoration-line: line-through;
+  color: var(--second-text-color);
+}
+
+.sale__price-action {
+  font-family: 'Roboto';
+  font-style: normal;
+  @include font(600, 20, 1, null);
+  color: var(--accent-color);
+}
+
+.sale__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 16px 48px;
+  background-color: var(--text-color);
+  border-radius: 16px;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  @include font(700, 16, 1.19, null);
+  text-align: center;
+  color: var(--main-color);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.5),
+      0px 4px 10px rgba(134, 229, 67, 0.1);
+  }
+  @include tablet {
+    @include font(700, 28, 1.18, null);
+  }
+}
