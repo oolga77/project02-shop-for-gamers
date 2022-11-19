@@ -1,10 +1,82 @@
 .btn-shop{
-    width: 62px;
-    height: 14px;
+    width: 102px;
+    height: 46px;
     font-weight: 700;
     font-size: 14px;
     line-height: 100%;
-    color:var(--button-color);
-    background-color:#86E543 ;
+    color: var(--button-color);
+    background-color:var(--accent-color);
     padding: 16px 20px;
+    border-radius: 16px;
+}
+.btn-start{
+ width: 306px;
+ height: 70px;
+font-weight: 700;
+font-size: 32px;
+line-height: 1.18;
+text-transform: uppercase;
+color: var(--main-color);
+background: var(--accent-color);
+border-radius: 16px;
+padding: 16px 20px;
+
+}
+.btn-wiev{
+ width: 195px;
+height: 65px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 1.17;
+color:var(--main-color);
+padding: 16px 48px;
+background: var(--text-color);
+border-radius: 16px;
+}
+.btn-buy{
+font-weight: 700;
+font-size: 32px;
+line-height: 1.17;
+text-transform: uppercase;
+color: var(--main-color); 
+padding: 16px 20px;
+width: 306px;
+height: 70px;
+background: var(--accent-color);
+border-radius: 16px;
+}
+.btn-add-cart{
+font-weight: 700;
+font-size: 32px;
+line-height: 1.17;
+text-transform: uppercase;
+color: var(--main-color);  
+padding: 16px 20px;
+width: 306px;
+height: 70px;
+border: 1px solid var(--accent-color);
+border-radius: 16px;
+}
+.btn-send{
+font-weight: 700;
+font-size: 32px;
+line-height: 1.18;
+text-transform: uppercase;
+color: var(--text-color);
+padding: 16px 20px;
+width: 306px;
+height: 70px;
+border: 1px solid var(--text-color);
+border-radius: 16px;
+}
+.btn-all{
+font-weight: 700;
+font-size: 16px;
+line-height: 1.18;
+text-align: center;
+color: var(--accent-color);
+
+
 }
