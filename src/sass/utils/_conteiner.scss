@@ -1,37 +1,30 @@
 .container {
-    //breakpoints:
-    //mobile - 480px
-    //tablet - 768px
-    //desktop - 1200px
+  //breakpoints:
+  //mobile - 480px
+  //tablet - 768px
+  //desktop - 1200px
 
-    
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 100%;
 
-    padding-left: 16px;
-    padding-right: 16px;
-    width: 100%;
+  margin: 0 auto;
 
-    margin: 0 auto;
-    
-      @include mobile {
-      width: 320px; 
-      
-   }
+  @include mobile {
+    width: 320px;
+  }
 
+  //tablet-style
 
-    //tablet-style
-
-    @include tablet {
-    width: 768px; 
+  @include tablet {
+    width: 768px;
     padding-left: 40px;
     padding-right: 40px;
-    }
+  }
 
-    //desktop-style
+  //desktop-style
 
-    @include desktop {
-       width: 1280px; 
-    }
-
-
-    
+  @include desktop {
+    width: 1280px;
+  }
 }
