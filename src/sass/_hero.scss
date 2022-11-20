@@ -16,7 +16,7 @@
         background-repeat: no-repeat;
         background-position: center;
         width: 100%;
-        opacity: .1;
+        opacity: .2;
         top: 55px;
         bottom: 0;
         left: -43px;
@@ -54,6 +54,9 @@
         color: var(--main-color);
         border: none;
         text-transform: uppercase;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
     }
 
     // &_img-wrap {
@@ -96,12 +99,22 @@
 // }
 
 
-
-
 @media screen and (min-width:1200px) {
     .hero {
         height: 860px;
         padding: 180px 623px 209px 142px;
+
+        &_btn {
+            width: 306px;
+            height: 70px;
+            font-weight: 700;
+            font-size: 32px;
+            font-family: inherit;
+        }
+
+        &_wrap {
+            display: flex;
+        }
 
         &-title {
             font-family: 'Roboto';
@@ -128,14 +141,65 @@
             color: var(--main-color);
             border: none;
             cursor: pointer;
-             text-transform: uppercase;
+            text-transform: uppercase;
 
         }
+
+        &_img {
+            width: 50%;
+        }
+
+        &_info {
+            width: 50%;
+            z-index: 1;
+        }
+
     }
 
 
+    
+
 }
 
+.hero-decor1 {
+    width: auto;
+    position: absolute;
+    top: 65px;
+    left: 50%;
+}
+
+.hero-decor2 {
+    width: 270px;
+    position: absolute;
+    right: 10%;
+    bottom: 40%;
+}
+
+.hero-decor3 {
+    width: 230px;
+    position: absolute;
+    bottom: 30%;
+    left: 40%;
+}
+
+@media screen and (min-width: 768px) {
+
+    .container {
+        width: 768px;
+        margin: 0;
+        padding-left: 40px;
+    }
+
+    .hero {
+        &-title {
+            width: 388px;
+            text-align: left;
+            font-weight: 600;
+            line-height: 1.17;
+            font-size: 56px;
+        }
+    }
+}
 
 
 // @media screen and (min-width:1200px) {
@@ -200,25 +264,3 @@
 
 // } 
 
-// @media screen and (min-width: 767px) {
-//     .hero-decor1 {
-//         position: absolute;
-//         top: 15%;
-//         left: 15%;
-//         max-width: 60px;
-//         max-height: 220px;
-//     }
-
-//     .hero-decor2 {
-//         top: 15%;
-//         right: 17%;
-//         max-width: 150px;
-//         max-height: 335px;
-//     }
-
-//     .hero-decor3 {
-//         top: 50%;
-//         left: 22%;
-//         max-width: 88px;
-//     }
-// }
