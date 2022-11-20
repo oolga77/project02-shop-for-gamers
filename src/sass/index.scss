@@ -1,10 +1,6 @@
 @import './common';
-@import './reset';
-@import './mixin';
-@import './vars';
-@import './is-hidden';
-@import './section';
-@import './conteiner';
+@import './utils/utils.scss';
+
 @import './header';
 @import './hero';
 @import './gallery';
