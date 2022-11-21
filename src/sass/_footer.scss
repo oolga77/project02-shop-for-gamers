@@ -1,41 +1,4 @@
-* {
-   margin: 0;
- }
- 
- p,
- h1,
- h2,
- h3,
- h4,
- h5,
- h6 {
-   margin: 0;
- }
- 
- ul,
- ol {
-   margin: 0;
-   padding-left: 0;
-   list-style: none;
- }
- 
- button {
-   cursor: pointer;
-   border: none;
-   font-family: inherit;
- }
- 
- a {
-   color: currentColor;
-   text-decoration: none;
- }
- 
- img {
-   display: block;
-   max-width: 100%;
-   height: auto;
- }
- 
+
  .footer {
    background: #001414;
    padding: 25px 32px 25px 15px;
@@ -57,8 +20,7 @@
      justify-content: start;
      gap: 20px;
    }
- }
- 
+ } 
  .footer-container {
    display: flex;
    justify-content: space-between;
@@ -76,8 +38,7 @@
      gap: 20px;
      justify-content: start;
    }
- }
- 
+ } 
  .footer-top-title {
    display: flex;
    height: 100%;
@@ -87,15 +48,14 @@
    .footer-top-title {
      min-width: 285px;
    }
- }
- 
+ } 
  .footer-title {
    display: flex;
    justify-content: center;
    width: 116px;
    text-align: center;
    font-family: "Roboto";
-   font-style: normal;
+   
    font-weight: 700;
    font-size: 24px;
    line-height: 1.17;
@@ -111,80 +71,60 @@
    .footer-title {
      width: 187px;
    }
- }
- 
+ } 
  @media screen and (min-width: 1280px) {
    .footer-list {
      min-width: 285px;
    }
- }
- 
+ } 
  .footer-list li:not(:last-child) {
    margin-bottom: 15px;
- }
- 
+ } 
  .footer-link {
-   font-family: "Roboto";
-   font-style: normal;
-   font-weight: 400;
+   font-family: "Roboto";    
    font-size: 16px;
    line-height: 100%;
    margin-bottom: 8px;
- }
- 
+ } 
  .footer-link:focus,
  .footer-link:hover {
    border-bottom: 1px solid #86E543;
- }
- 
+ } 
  .footer-link-mail {
-   font-family: "Roboto";
-   font-style: normal;
-   font-weight: 400;
+   font-family: "Roboto";   
    font-size: 16px;
    line-height: 100%;
    margin-bottom: 8px;
- }
- 
+ } 
  .footer-link-tel {
-   font-family: "Roboto";
-   font-style: normal;
-   font-weight: 400;
+   font-family: "Roboto";   
    font-size: 16px;
    line-height: 100%;
    margin-bottom: 8px;
    margin-top: 15px;
  }
  .footer-mail {
-   font-family: "Roboto";
-   font-style: normal;
-   font-weight: 400;
+   font-family: "Roboto";   
    font-size: 16px;
    line-height: 1.19;
    color: #8D9289;
- }
- 
+ } 
  .footer-tel {
-   font-family: "Roboto";
-   font-style: normal;
-   font-weight: 400;
+   font-family: "Roboto";   
    font-size: 16px;
    line-height: 1.19;
    letter-spacing: 0.01em;
    text-transform: capitalize;
    color: #8D9289;
- }
- 
+ } 
  .footer-list-link li:not(:last-child) {
    margin-bottom: 8px;
- }
- 
+ } 
  @media screen and (min-width: 1280px) {
    .footer-social {
      min-width: 285px;
    }
- }
- 
+ } 
  .footer-social-list {
    display: flex;
    flex-direction: column;
@@ -203,8 +143,7 @@
      flex-direction: column;
      align-items: start;
    }
- }
- 
+ } 
  .footer-link-svg {
    background: #fff;
    width: 24px;
@@ -213,8 +152,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
- }
- 
+ } 
  .footer-svg {
    fill: #000;
  }
