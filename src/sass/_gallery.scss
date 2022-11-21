@@ -1,0 +1,102 @@
+.gallery-section {
+  background-color: var(--main-color);
+  padding-bottom: 15vw;
+  @include tablet {
+    padding-top: 15.6vw;
+    padding-bottom: 15.6vw;
+  }
+  @include desktop {
+    //
+    padding-top: 9.4vw;
+    padding-bottom: 13vw;
+    background-image: url(../images/img-gallery/gallery-bg.jpg);
+  }
+}
+.swiper {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+.swiper-slide {
+  /* Center slide text vertically */
+  //вьюпорт
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide picture {
+  display: block;
+  width: 100vw;
+  height: 100%;
+}
+.gallery-text {
+  display: block;
+  position: absolute;
+  bottom: 9.7vw;
+  left: 7.5vw;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 7.5vw;
+  line-height: 8.8vw;
+  padding-bottom: 1.9vw;
+  @include tablet {
+    font-size: 7.3vw;
+    line-height: 8.6vw;
+    bottom: 1.9vw;
+    left: 5.2vw;
+  }
+  @include desktop {
+    font-size: 4.4vw;
+    line-height: 5.2vw;
+    text-align: center;
+    bottom: 2vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.gallery-text-one {
+  background: linear-gradient(
+    270deg,
+    #1edde0 13.26%,
+    #8bda41 51.01%,
+    #ef001b 107.89%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.gallery-text-two {
+  background: linear-gradient(
+    270deg,
+    #03fe8f 4.61%,
+    #ebdcff 57.91%,
+    #ff98f3 92.2%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.gallery-text-three {
+  background: linear-gradient(
+    270deg,
+    #ffffff 13.26%,
+    #693cf9 60.87%,
+    #f475eb 107.89%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}

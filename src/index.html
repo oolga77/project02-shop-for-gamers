@@ -4,16 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shop For Games</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
   <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
-    
+
     <include src="./partials/header.html"></include>
 
     <!-- <a href="./accessories-page.html">Accessories</a> -->
@@ -22,9 +29,20 @@
     <include src="./partials/gallery.html"></include>
     <include src="./partials/sale.html"></include>
     <include src="./partials/footer.html"></include>
-    
-    
-    
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        cssMode: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+    </script>
   </body>
 </html>
