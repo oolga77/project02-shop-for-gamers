@@ -1,0 +1,2 @@
+var selectBtn=document.querySelector(".select-btn"),items=document.querySelectorAll(".item");selectBtn.addEventListener("click",(function(){selectBtn.classList.toggle("open")})),items.forEach((function(e){e.addEventListener("click",(function(){e.classList.toggle("checked");var t=document.querySelectorAll(".checked"),c=document.querySelector(".btn-text");t&&t.length>0?c.innerText="".concat(t.length," Selected"):c.innerText="Color Option"}))}));
+//# sourceMappingURL=take-order-page.66e49c6a.js.map
