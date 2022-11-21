@@ -1,11 +1,24 @@
 .blog-article {
+  background: #01383a;
+  background-image: url(../images/img-blog-article/blog-article-bac/background-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 48px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/img-blog-article/blog-article-bac/background-mob-2x.jpg);
+  }
   @include mobile {
     background: #01383a;
     background-image: url(../images/img-blog-article/blog-article-bac/background-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 320px;
+    width: 480px;
     margin: 0 auto;
     padding-top: 40px;
     padding-bottom: 48px;
@@ -21,7 +34,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 768px;
+    width: 767px;
     margin: 0 auto;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -59,31 +72,49 @@
   }
 }
 
-.container-mob-picture {
+.mob-lin-top {
   @include tablet {
     display: none;
   }
 }
 
-.blar-lin-mob-bottom {
+.mob-lin-bottom {
+  @include tablet {
+    display: none;
+  }
   margin-top: -55px;
+  // @media screen and (min-width: 320px) {
+  //   margin-left: -20px;
+  //   margin-top: -37px;
+  // }
+  // @media screen and (min-width: 480px) {
+  //   margin-left: -30px;
+  //   margin-top: -55px;
+  // }
+}
+
+.blar-mob-picture {
+  @include tablet {
+    display: none;
+  }
 }
 
 .container-lin-top {
-  @media screen and (max-width: 768px) {
+  width: 100%;
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
 
 .container-lin-bottom {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
   margin-top: -60px;
 }
 
 .container-picture {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
   display: flex;
