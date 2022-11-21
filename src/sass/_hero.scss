@@ -15,7 +15,7 @@
     @media screen and (min-width: 768px) {
         background-image: url(../images/img-hero/hero2tab.png), url(../images/img-hero/herotab.jpg);
         background-size: contain, cover;
-        background-position: top 33px right 0px, center;
+        background-position: top 33px right 0, center;
         background-repeat: no-repeat;
 
         @media (min-device-pixel-ratio: 2),
@@ -29,6 +29,8 @@
 
     @media screen and (min-width: 1280px) {
         background-image: url(../images/img-hero/hero2desc.png), url(../images/img-hero/herodesc.jpg);
+        background-size: contain, cover;
+        background-position: top right, center;
 
 
         @media (min-device-pixel-ratio: 2),
@@ -117,6 +119,14 @@
 }
 
 @media screen and (min-width: 1280px) {
+
+    .hero_wrap {
+        padding-top: 180px;
+        padding-right: 623px;
+        padding-bottom: 203px;
+        padding-left: 142px;
+    }
+
     .hero_title {
         font-size: 64px;
         line-height: 1.17;
