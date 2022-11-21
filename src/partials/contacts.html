@@ -1,0 +1,100 @@
+<section class="contacts">
+  <div class="container contacts-container">
+    <h2 class="contacts-title">Сontacts</h2>
+    <picture class="contacts-img">
+      <source
+        srcset="
+          ./images/contacts/contacts-tab-1x.jpg 1x,
+          ./images/contacts/contacts-tab-2x.jpg 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./images/contacts/contacts-mob-1x.jpg 1x,
+          ./images/contacts/contacts-mob-2x.jpg 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <img
+        src="./images/contacts/img-contacts.jpg"
+        alt="device"
+        width="320"
+        height="346"
+      />
+    </picture>
+    <div class="contacts-text">
+      <p>
+        In case of queries about order handling and/or delay, drop us an email
+        at
+      </p>
+      <p class="contacts-text-mail">
+        <a class="link" href="mailto:info@shopforgamers.com"
+          >info@shopforgamers.com</a
+        >
+      </p>
+    </div>
+    <div class="contacts-block">
+      <h3 class="contacts-mail-text">Email</h3>
+      <p class="contacts-mail">
+        <a class="email link" href="mailto:sfg.info@gmail.com"
+          >sfg.info@gmail.com</a
+        >
+      </p>
+
+      <h3 class="contacts-phone">Phone number</h3>
+      <ul class="phone-list list">
+        <li class="phone-item">
+          <a class="phone-first link" href="tel:+380936432288"
+            >+38 (093) 643 22 88</a
+          >
+        </li>
+        <li class="phone-item">
+          <a class="phone-second link" href="tel:+380503454423"
+            >+38 (050) 345 44 23</a
+          >
+        </li>
+      </ul>
+    </div>
+    <p class="contacts-us">CONTACT US</p>
+    <form class="contacts-form">
+      <ul class="contacts-form-list list">
+        <li class="contacts-form-item">
+          <label>
+            <span class="label-text-contacts">
+              <input
+                type="text-input"
+                class="form-input"
+                name="user-name"
+                placeholder="Name"
+              />
+            </span>
+          </label>
+        </li>
+        <li class="contacts-form-item">
+          <label>
+            <span class="label-text-contacts">
+              <input
+                type="text-input"
+                class="form-input"
+                name="user-name"
+                placeholder="Email"
+              />
+            </span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <span class="label-text-textarea">Leave your message</span>
+            <textarea
+              name="comment"
+              clas="form-input form-comment"
+              placeholder=" "
+            ></textarea>
+          </label>
+        </li>
+      </ul>
+    </form>
+    <button type="button" class="contacts-btn">SEND</button>
+  </div>
+</section>
