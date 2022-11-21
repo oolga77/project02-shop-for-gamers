@@ -1,16 +1,20 @@
 .order {
   &__wrap {
+    margin: 0 auto;
     padding: 40px 16px;
     background-color: #c4c4c4;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    @media screen and (min-width: 320px) {
+      min-width: 320px;
+    }
     @media screen and (max-width: 768px) {
       background-image: url(../images/img-take-order/bcg-1.jpg);
     }
     @media screen and (min-width: 768px) {
       background-image: url(../images/img-take-order/bcg-tab-1.jpg);
-
+      min-width: 768;
       padding: 120px 40px 120px 38px;
     }
     @media screen and (min-width: 1280px) {
