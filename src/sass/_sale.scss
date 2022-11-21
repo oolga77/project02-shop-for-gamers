@@ -41,7 +41,11 @@
   @include font(600, 24, 1.17, null);
   color: #ffffff;
   // margin-bottom: 35px;
-  padding-left: 64px;
+  // padding-left: 64px;
+  padding-left: calc(100% / 2 - 80px);
+  @include mobile {
+    padding-left: 144px;
+  }
   @include tablet {
     padding-left: 102px;
     @include font(600, 56, 1.18, null);
@@ -117,6 +121,12 @@
 .sale__decor {
   position: relative;
   margin-bottom: 35px;
+  @media screen and (min-width: 320px) {
+    @media screen and (max-width: 479px) {
+      width: 288px;
+      margin: 0 auto 35px auto;
+    }
+  }
   @include tablet {
     margin-bottom: 51px;
   }
@@ -145,6 +155,9 @@
 .border1 {
   height: 8px;
   width: 117px;
+  @include mobile {
+    width: 197px;
+  }
   @include tablet {
     height: 19px;
     width: 244px;
@@ -159,6 +172,9 @@
 .border3 {
   height: 1px;
   width: calc(100% - 117px);
+  @include mobile {
+    width: calc(100% - 197px);
+  }
   @include tablet {
     width: calc(100% - 244px);
   }
@@ -178,6 +194,9 @@
 .border2 {
   height: 7px;
   width: 123px;
+  @include mobile {
+    width: 203px;
+  }
   @include tablet {
     height: 19px;
     width: 254px;
@@ -192,6 +211,9 @@
 .border4 {
   height: 1px;
   width: calc(100% - 123px);
+  @include mobile {
+    width: calc(100% - 203px);
+  }
   @include tablet {
     width: calc(100% - 254px);
   }
