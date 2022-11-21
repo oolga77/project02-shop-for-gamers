@@ -1,26 +1,36 @@
 .order {
+  background-color: #c4c4c4;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media screen and (min-width: 320px) {
+    background-image: url(../images/img-take-order/bcg-1.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/img-take-order/bcg-tab-1.jpg);
+  }
+  @media screen and (max-width: 1280px) {
+    background-image: url(../images/img-take-order/bcg-desc-1.jpg);
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/img-take-order/bcg-desc-1.jpg);
+  }
   &__wrap {
-    margin: 0 auto;
-    padding: 40px 16px;
-    background-color: #c4c4c4;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    @media screen and (min-width: 320px) {
-      min-width: 320px;
+    padding-top: 40px;
+    @media screen and (max-width: 480px) {
+      width: 100%;
     }
+
     @media screen and (max-width: 768px) {
-      background-image: url(../images/img-take-order/bcg-1.jpg);
+      max-width: 486px;
+      width: 100%;
     }
+
     @media screen and (min-width: 768px) {
-      background-image: url(../images/img-take-order/bcg-tab-1.jpg);
       min-width: 768;
       padding: 120px 40px 120px 38px;
-    }
-    @media screen and (min-width: 1280px) {
-      background-image: url(../images/img-take-order/bcg-desc-1.jpg);
-      max-width: 1280px;
-      padding: 120px 40px 120px 40px;
     }
   }
   &__title {
@@ -30,19 +40,16 @@
     line-height: 1.16;
     color: var(--text-color);
     @media screen and (min-width: 768px) {
+      max-width: 700px;
+      display: block;
+      margin: 0 auto;
       font-size: 56px;
       line-height: 1.18;
     }
-  }
-  &__line {
-    position: absolute;
-    width: 100%;
-    top: 48px;
-    @media screen and (min-width: 400px) {
-      top: 35px;
-    }
-    @media screen and (min-width: 480px) {
-      top: 25px;
+    @media screen and (min-width: 1280px) {
+      max-width: 700px;
+      display: block;
+      margin: 0;
     }
   }
   &__subtitle {
@@ -78,6 +85,7 @@
     }
   }
 }
+
 .price-mob-tab {
   @media screen and (min-width: 1280px) {
     display: none;
@@ -159,7 +167,7 @@
   justify-content: center;
   gap: 16px;
   margin-top: 16px;
-  @media screen and (min-width: 760px) {
+  @media screen and (min-width: 768px) {
     margin-top: 24px;
     gap: 24px;
   }
@@ -177,7 +185,7 @@
     @media screen and (min-width: 480px) {
       width: 18.75vw;
     }
-    @media screen and (min-width: 760px) {
+    @media screen and (min-width: 768px) {
       width: 154px;
     }
   }
@@ -189,7 +197,7 @@
 }
 .contact-form {
   margin-top: 32px;
-  @media screen and (min-width: 760px) {
+  @media screen and (min-width: 768px) {
     margin-top: 48px;
   }
   &__subtitle {
@@ -199,7 +207,7 @@
     line-height: 1.17;
     text-transform: uppercase;
     color: var(--accent-color);
-    @media screen and (min-width: 760px) {
+    @media screen and (min-width: 768px) {
       font-size: 36px;
       line-height: 1.17;
     }
@@ -207,7 +215,7 @@
 }
 .conract-form-wrap {
   margin-top: 16px;
-  @media screen and (min-width: 760px) {
+  @media screen and (min-width: 768px) {
     margin-top: 48px;
   }
 }
@@ -240,7 +248,7 @@
     font-size: 16px;
     line-height: 1.25;
     color: var(--text-color);
-    @media screen and (min-width: 760px) {
+    @media screen and (min-width: 768px) {
       font-size: 18px;
       line-height: 1.11;
     }
@@ -256,7 +264,7 @@
     font-size: 16px;
     line-height: 1.25;
     color: var(--text-color);
-    @media screen and (min-width: 760px) {
+    @media screen and (min-width: 768px) {
       font-size: 18px;
       line-height: 1.11;
     }
@@ -286,7 +294,7 @@
     font-size: 16px;
     line-height: 1.25;
     color: var(--text-color);
-    @media screen and (min-width: 760px) {
+    @media screen and (min-width: 768px) {
       font-size: 18px;
       line-height: 1.11;
     }
@@ -319,7 +327,7 @@
   font-size: 16px;
   line-height: 1.25;
   color: var(--text-color);
-  @media screen and (min-width: 760px) {
+  @media screen and (min-width: 768px) {
     font-size: 18px;
     line-height: 1.11;
   }
@@ -333,7 +341,7 @@
     font-size: 16px;
     line-height: 1.25;
     color: #cdcdcd;
-    @media screen and (min-width: 760px) {
+    @media screen and (min-width: 768px) {
       font-size: 18px;
       line-height: 1.11;
     }
@@ -350,7 +358,7 @@
     color: var(--text-color);
     border: 1px solid var(--accent-color);
     background-color: inherit;
-    @media screen and (min-width: 760px) {
+    @media screen and (min-width: 768px) {
       height: 256px;
     }
   }
@@ -361,7 +369,7 @@
   align-items: center;
   gap: 16px;
   margin-top: 24px;
-  @media screen and (min-width: 760px) {
+  @media screen and (min-width: 768px) {
     gap: 24px;
   }
   @media screen and (min-width: 1280px) {
@@ -403,7 +411,7 @@
     }
   }
 
-  @media screen and (min-width: 760px) {
+  @media screen and (min-width: 768px) {
     width: 306px;
     height: 70px;
     font-size: 32px;
