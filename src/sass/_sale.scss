@@ -51,7 +51,7 @@
 .line-wrap1,
 .line-wrap2 {
   display: flex;
-  gap: calc(100% / 3);
+  gap: calc(100% / 2);
   @include desktop {
     gap: calc(100% / 1.5);
   }
