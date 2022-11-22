@@ -10,6 +10,14 @@
 
   margin: 0 auto;
 
+  
+    
+      @include mobile {
+      max-width: 480px; 
+      
+  }
+
+
   @include mobile {
     width: 480px;
   }
@@ -17,7 +25,7 @@
   //tablet-style
 
   @include tablet {
-    width: 768px;
+    max-width: 768px;
     padding-left: 40px;
     padding-right: 40px;
   }

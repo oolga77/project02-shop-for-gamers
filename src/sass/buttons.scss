@@ -1,0 +1,159 @@
+.btn-shop{
+ font-weight: 700;
+font-size: 14px;
+line-height: 100%;
+color: var(--button-color);
+background-color:var(--accent-color);
+padding: 16px 20px;
+border-radius: 16px;
+cursor: pointer;
+&:hover{
+    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5), 0px 4px 10px rgba(255, 255, 255, 0.1);  
+}
+}
+.btn-start{
+font-weight: 700;
+font-size: 32px;
+line-height: 1.18;
+text-transform: uppercase;
+color: var(--main-color);
+background: var(--accent-color);
+border-radius: 16px;
+padding: 16px 20px;
+cursor: pointer;
+&:hover{
+box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5), 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+}
+.btn-wiev{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 1.17;
+color:var(--main-color);
+padding: 16px 48px;
+background: var(--text-color);
+border-radius: 16px;
+cursor: pointer;
+&:hover{
+box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.5), 0px 4px 10px rgba(134, 229, 67, 0.1);
+}
+}
+.order{
+    text-decoration: none;
+}
+.btn-buy{
+font-weight: 700;
+font-size: 32px;
+line-height: 1.17;
+text-transform: uppercase;
+color: var(--main-color); 
+padding: 16px 20px;
+background: var(--accent-color);
+border-radius: 16px;
+cursor: pointer;
+&:hover{
+box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5), 0px 4px 10px rgba(255, 255, 255, 0.1);
+    }
+}
+.btn-add-cart{
+font-weight: 700;
+font-size: 32px;
+line-height: 1.17;
+text-transform: uppercase;
+color: var(--accent-color);  
+background: var( --main-color);
+padding: 16px 20px;
+border: 1px solid var(--accent-color);
+border-radius: 16px;
+cursor: pointer;
+&:hover{
+filter: drop-shadow(0px 4px 10px rgba(134, 229, 67, 0.1)) drop-shadow(0px 4px 20px rgba(134, 229, 67, 0.4));
+}
+}
+.btn-send{
+font-weight: 700;
+font-size: 32px;
+line-height: 1.18;
+text-transform: uppercase;
+color: var(--text-color);
+padding: 16px 20px;
+background: var( --main-color);
+border: 1px solid var(--text-color);
+border-radius: 16px;
+cursor: pointer;
+&:hover{
+filter: drop-shadow(0px 4px 10px rgba(255, 255, 255, 0.1)) drop-shadow(0px 4px 20px rgba(255, 255, 255, 0.4));
+}
+}
+.filter{
+    gap: 44px;
+    text-decoration: none;
+}
+.btn-all{
+font-weight: 700;
+font-size: 16px;
+line-height: 1.18;
+text-align: center;
+width: 168px;
+height: 51px;
+color: var(--accent-color);
+background: var( --main-color);
+border-radius: 16px;
+padding: 16px 16px;
+filter: drop-shadow(0px 4px 4px rgba(134, 229, 67, 0.2));
+cursor: pointer;
+&:hover{
+filter: drop-shadow(0px 4px 10px rgba(134, 229, 67, 0.1)) drop-shadow(0px 4px 20px rgba(134, 229, 67, 0.4));
+
+}
+&:active{
+ color:var(--main-color);
+background: #86E543;
+border: 1px solid #86E543;
+box-shadow: 0px 4px 10px rgba(134, 229, 67, 0.1), 0px 4px 20px rgba(134, 229, 67, 0.4); 
+}
+}
+.menu{
+    display: flex;
+    gap: 44px;
+}
+.btn-menu{
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+color: var(--text-color);
+border: 0;
+background: var(--main-color);
+&:hover{
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 8px;
+}
+}
+.cool{
+font-weight: 700;
+font-size: 32px;
+line-height: 1.18;
+text-transform: uppercase;
+color: var(---main-color);
+background: var(--accent-color);
+border-radius: 16px;
+padding: 16px;
+cursor: pointer;
+&:active{
+box-shadow: 0px 4px 10px rgba(134, 229, 67, 0.1), 0px 4px 20px rgba(134, 229, 67, 0.4);
+}
+}
+.bad{
+font-weight: 700;
+font-size: 32px;
+line-height: 1.18;
+text-transform: uppercase;
+color: var(--accent-color);
+background: var(--main-color);
+border-radius: 16px;
+padding: 16px;
+cursor: pointer;
+}
+
