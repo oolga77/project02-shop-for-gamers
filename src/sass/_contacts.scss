@@ -29,6 +29,19 @@
                     background-image: url(../images/contacts/contacts-bg-tab-2.jpg);
                 }
          }
+         @media screen and (min-width:1200px) {
+            padding-top: 120px;
+            padding-bottom: 120px;
+            padding-left: 40px;
+            padding-right: 40px;
+             max-width: 1200px;
+             background-image: url(../images/contacts/contacts-bg-des-1.jpg);
+            @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url(../images/contacts/contacts-bg-des-2.jpg);
+                }
+         }
 }
 
 .contacts-title {
@@ -45,7 +58,18 @@
             padding-left: 59px;
             font-size: 56px;
             line-height: 1.18;
-        }     
+        }    
+    @media screen and (min-width: 1200px) {
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 1.18;
+    padding-left: 0px;
+    margin-left: 102px;
+    
+    }
+}
+.contacts-img{
+    width: 100%;
 }
 
 .team-item-img>img {
@@ -59,21 +83,29 @@
 
 .contacts-text {
     font-weight: 400;
-        font-size: 16px;
-        line-height: 1.19;
-        color: var(--text-color);
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--text-color);
 
        
 
         @media screen and (max-width: 767px) {
         margin-top: 16px;
-            padding-left: 16px;
-            padding-right: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
         }
 
-                 @media screen and (min-width: 768px) {
-                     margin-top: 32px;          
-                 }
+        @media screen and (min-width: 768px) {
+        margin-top: 32px;          
+        }
+        @media screen and (min-width: 1200px){
+      margin-top: 60px;
+      width: 488px;
+      height: 112px;
+      font-weight: 400;
+     font-size: 24px;
+     line-height: 1.14;
+        }
         
 }
 
@@ -85,8 +117,8 @@
     
     @media screen and (max-width: 767px) {
         margin-top: 24px;
-            margin-bottom: 24px;
-            padding-left: 16px;
+        margin-bottom: 24px;
+        padding-left: 16px;
         }
                  @media screen and (min-width: 768px) {
 
@@ -118,6 +150,9 @@
         color: #8D9289;
         margin-top: 8px;
         margin-bottom: 24px;
+        @media screen and (min-width: 1200px){
+            margin-top: 0px;
+        }
 }
 
 .contacts-phone {
@@ -134,17 +169,27 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 8px;
+    @media screen and (min-width: 1200px){
+    display:block;
+    }
+   
 }
 
 .phone-item {
     font-weight: 400;
-        font-size: 16px;
-        line-height: 1.19;
-    
-        letter-spacing: 0.01em;
-        text-transform: capitalize;
-    
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+
         color: #8D9289;
+        @media screen and (min-width: 1200px){
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 1.16;
+            letter-spacing: 0.01em;
+            margin-top: 8px;
+        }
 }
 
 .contacts-us {
