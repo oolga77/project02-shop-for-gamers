@@ -87,13 +87,13 @@
   justify-content: center;
   align-items: center;
   margin-top: 27px;
-  padding-bottom: 108px;
+  padding-bottom: 44px;
   gap: 36px;
   @media screen and (min-width: 768px) {
     flex-wrap: wrap;
     flex-direction: row;
     gap: 38px;
-    padding-bottom: 188px;
+    padding-bottom: 52px;
   }
 }
 
@@ -359,4 +359,51 @@
   }
   border-top: 1px solid #28780d;
   box-shadow: 0px 4px 25px rgba(40, 120, 13, 0.25);
+}
+// animation
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 48px;
+  @include tablet {
+    padding-bottom: 120px;
+  }
+}
+.wave {
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  border-radius: 7px;
+  margin: 16px;
+  animation: wave 1s linear infinite;
+}
+.wave:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.wave:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.wave:nth-child(4) {
+  animation-delay: 0.5s;
+}
+.wave:nth-child(5) {
+  animation-delay: 0.7s;
+}
+@keyframes wave {
+  0% {
+    transform: scaleX(0) scaleY(0);
+  }
+  25% {
+    transform: scaleX(0.5) scaleY(0.5);
+  }
+  50% {
+    transform: scaleX(2) scaleY(1);
+  }
+  75% {
+    transform: scaleX(0.5) scaleY(0.5);
+  }
+  100% {
+    transform: scaleX(0) scaleY(0);
+  }
 }
