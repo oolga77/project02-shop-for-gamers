@@ -1,0 +1,142 @@
+<section class="gallery-section">
+  <div class="gallery-container">
+    <h2 class="is-hidden">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, libero!
+    </h2>
+    <div class="gallery-slider">
+      <div class="gallery-input-wrapper">
+        <input
+          class="galley-input"
+          type="radio"
+          name="radio-pic"
+          id="gallery-img-1"
+          checked
+        />
+        <input
+          class="galley-input"
+          type="radio"
+          name="radio-pic"
+          id="gallery-img-2"
+        />
+        <input
+          class="galley-input"
+          type="radio"
+          name="radio-pic"
+          id="gallery-img-3"
+        />
+
+        <div class="gallery-image s1">
+          <picture class="gallery-border">
+            <source
+              srcset="
+                ./images/img-gallery/gallery-desk-1.jpg    1x,
+                ./images/img-gallery/gallery-desk-1-2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/img-gallery/gallery-tab-1.jpg    1x,
+                ./images/img-gallery/gallery-tab-1-2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/img-gallery/gallery-mob-1.jpg    1x,
+                ./images/img-gallery/gallery-mob-1-2x.jpg 2x
+              "
+              media="(max-width: 767.9px)"
+            />
+            <img
+              src="./images/img-gallery/gallery-desk-1.jpg"
+              alt=""
+              width="1600"
+            />
+          </picture>
+          <p class="gallery-text gallery-text-one gallery-mob">
+            One place <br />
+            for everything you want
+          </p>
+          <p class="gallery-text gallery-text-one gallery-tab">
+            One place for <br />
+            everything you want
+          </p>
+        </div>
+        <div class="gallery-image">
+          <picture class="gallery-border">
+            <source
+              srcset="
+                ./images/img-gallery/gallery-desk-2.jpg    1x,
+                ./images/img-gallery/gallery-desk-2-2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/img-gallery/gallery-tab-2.jpg    1x,
+                ./images/img-gallery/gallery-tab-2-2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/img-gallery/gallery-mob-2.jpg    1x,
+                ./images/img-gallery/gallery-mob-2-2x.jpg 2x
+              "
+              media="(max-width: 767.9px)"
+            />
+            <img
+              src="./images/img-gallery/gallery-desk-2.jpg"
+              alt=""
+              width="1600"
+            />
+          </picture>
+          <p class="gallery-text gallery-text-two gallery-text-two-tab">
+            Best shop for buying
+            <span class="gallery-text-two-span"> gaming products</span>
+          </p>
+        </div>
+        <div class="gallery-image">
+          <picture class="gallery-border">
+            <source
+              srcset="
+                ./images/img-gallery/gallery-desk-3.jpg    1x,
+                ./images/img-gallery/gallery-desk-3-2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/img-gallery/gallery-tab-3.jpg    1x,
+                ./images/img-gallery/gallery-tab-3-2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/img-gallery/gallery-mob-3.jpg    1x,
+                ./images/img-gallery/gallery-mob-3-2x.jpg 2x
+              "
+              media="(max-width: 767.9px)"
+            />
+            <img
+              src="./images/img-gallery/gallery-desk-3.jpg"
+              alt=""
+              width="1600"
+            />
+          </picture>
+          <p class="gallery-text gallery-text-three">
+            High-quality products <br />
+            in lowest price
+          </p>
+        </div>
+      </div>
+      <div class="gallery-navigation">
+        <label for="gallery-img-1" class="gallery-label"></label>
+        <label for="gallery-img-2" class="gallery-label"></label>
+        <label for="gallery-img-3" class="gallery-label"></label>
+      </div>
+    </div>
+  </div>
+</section>

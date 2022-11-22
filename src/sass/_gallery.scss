@@ -1,0 +1,236 @@
+.gallery-section {
+  background-color: var(--main-color);
+  padding-bottom: 20vw;
+  height: 100vhs;
+  @include tablet {
+    padding-top: 15.6vw;
+    padding-bottom: 17vw;
+  }
+  @include desktop {
+    padding-top: 9.8vw;
+    padding-bottom: 12vw;
+    max-height: 62.5vw;
+    background-image: url(../images/img-gallery/gallery-bg.jpg);
+    background-repeat: no-repeat;
+    //ширину задать
+  }
+}
+@mixin desktop-fixed {
+  @media screen and (min-width: 1600px) {
+    @content;
+  }
+}
+.gallery-container {
+  position: relative;
+  max-width: 1600px;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+.gallery-slider {
+  width: 100vw;
+  overflow: hidden;
+}
+.gallery-border {
+  display: block;
+  border-top: 2px solid var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+}
+.gallery-navigation {
+  display: flex;
+  position: absolute;
+  top: 156vw;
+  left: 50%;
+  padding-top: 4vw;
+  padding-bottom: 5vw;
+  padding-left: 10px;
+  padding-right: 10px;
+  transform: translateX(-50%);
+
+  @include tablet {
+    top: 63vw;
+  }
+  @include desktop {
+    top: 37vw;
+  }
+  @include desktop-fixed {
+    padding: 20px;
+    top: 635px;
+  }
+}
+.gallery-label {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background-color: var(--text-color);
+  //!!!!!!!!!!!!!!!!!!!!!!!!!!! лучше сделать переход!!!!!!!!!!!!
+  transition: all 250ms ease;
+  opacity: 0.8;
+
+  &:not(:last-child) {
+    margin-right: 16px;
+  }
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    opacity: 1;
+    border-radius: 30px;
+    width: 40px;
+  }
+}
+input[name='radio-pic'] {
+  position: absolute;
+  visibility: hidden;
+}
+.gallery-input-wrapper {
+  width: 300%;
+  height: 100%;
+  display: flex;
+}
+.gallery-image {
+  position: relative;
+  width: 33.33333%;
+  transition: all 500ms ease-in-out;
+  @include tablet {
+    transition: all 800ms ease-in-out;
+  }
+}
+.gallery-image picture {
+  width: 100vw;
+  height: 100%;
+}
+#gallery-img-1:checked ~ .s1 {
+  margin-left: 0;
+}
+#gallery-img-2:checked ~ .s1 {
+  margin-left: -33.33%;
+}
+#gallery-img-3:checked ~ .s1 {
+  margin-left: -66.58%;
+
+  @include tablet {
+    margin-left: -66.7%;
+  }
+  @include desktop {
+    margin-left: -66.61%;
+  }
+}
+.gallery-text {
+  display: block;
+  position: absolute;
+  bottom: 11.5vw;
+  left: 7.5vw;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 7.5vw;
+  line-height: 8.75vw;
+  max-width: 87.5vw;
+  @include tablet {
+    font-size: 7.3vw;
+    line-height: 8.6vw;
+    bottom: 1.8vw;
+    left: 5.3vw;
+    max-width: 75vw;
+  }
+  @include desktop {
+    font-size: 4.4vw;
+    line-height: 5.2vw;
+    left: 3.8vw;
+    bottom: 3.8vw;
+    max-width: 51vw;
+  }
+  @include desktop-fixed {
+    font-size: 70px;
+    line-height: 1.2;
+    bottom: 50px;
+  }
+}
+.gallery-text-one {
+  display: inline-block;
+  max-height: 180vw;
+  min-width: 94vw;
+  padding-bottom: 7px;
+  background: linear-gradient(
+    270deg,
+    #1edde0 13.26%,
+    #8bda41 51.01%,
+    #ef001b 107.89%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+
+  @include tablet {
+    min-width: 0;
+    max-width: 78vw;
+  }
+  @include desktop {
+    display: block;
+    max-width: 46.9vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @include desktop-fixed {
+    left: 750px;
+  }
+}
+.gallery-text-two {
+  background: linear-gradient(
+    270deg,
+    #03fe8f 4.61%,
+    #ebdcff 57.91%,
+    #ff98f3 92.2%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  @include desktop {
+    width: 46.2vw;
+    left: 3.8vw;
+    text-align: center;
+    //49
+  }
+  @include desktop-fixed {
+    width: 800px;
+    left: 10px;
+  }
+}
+.gallery-text-two-span {
+  text-transform: uppercase;
+}
+.gallery-text-three {
+  display: block;
+  // min-width: 450px;
+  width: 104vw;
+  background: linear-gradient(
+    270deg,
+    #ffffff 27.78%,
+    #693cf9 61.11%,
+    #f475eb 102.56%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  // !!!!!!!!откуда расстояние в р!!!!!!!!!!!!!!!!!!!!!!!!!!
+  // @include tablet {
+  //   width: 551px;
+  // }
+  @include desktop-fixed {
+    left: 81px;
+  }
+}
+.gallery-mob {
+  display: block;
+  @include tablet {
+    display: none;
+  }
+}
+.gallery-tab {
+  display: none;
+  @include tablet {
+    display: block;
+  }
+}
