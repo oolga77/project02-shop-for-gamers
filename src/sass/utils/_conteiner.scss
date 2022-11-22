@@ -10,17 +10,13 @@
 
   margin: 0 auto;
 
-  
-    
-      @include mobile {
-      max-width: 480px; 
-      
-  }
-
-
   @include mobile {
-    width: 480px;
+    max-width: 480px;
   }
+
+  // @include mobile {
+  //   width: 480px;
+  // }
 
   //tablet-style
 
