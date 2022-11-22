@@ -1,6 +1,5 @@
 .gallery-section {
   background-color: var(--main-color);
-  position: relative;
   padding-bottom: 20vw;
   height: 100vhs;
   @include tablet {
@@ -12,28 +11,51 @@
     padding-bottom: 12vw;
     max-height: 62.5vw;
     background-image: url(../images/img-gallery/gallery-bg.jpg);
+    background-repeat: no-repeat;
+    //ширину задать
+  }
+}
+@mixin desktop-fixed {
+  @media screen and (min-width: 1600px) {
+    @content;
   }
 }
 .gallery-container {
+  position: relative;
+  max-width: 1600px;
+  width: 100%;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 }
 .gallery-slider {
   width: 100vw;
   overflow: hidden;
 }
+.gallery-border {
+  display: block;
+  border-top: 2px solid var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+}
 .gallery-navigation {
   display: flex;
   position: absolute;
-  top: 160vw;
+  top: 156vw;
   left: 50%;
+  padding-top: 4vw;
+  padding-bottom: 5vw;
+  padding-left: 10px;
+  padding-right: 10px;
   transform: translateX(-50%);
 
   @include tablet {
-    top: 83vw;
+    top: 63vw;
   }
   @include desktop {
-    top: 50vw;
+    top: 37vw;
+  }
+  @include desktop-fixed {
+    padding: 20px;
+    top: 635px;
   }
 }
 .gallery-label {
@@ -41,8 +63,9 @@
   width: 16px;
   border-radius: 50%;
   background-color: var(--text-color);
-  // cursor: pointer;
-  //   transform: all 250ms linear;
+  //!!!!!!!!!!!!!!!!!!!!!!!!!!! лучше сделать переход!!!!!!!!!!!!
+  transition: all 250ms ease;
+  opacity: 0.8;
 
   &:not(:last-child) {
     margin-right: 16px;
@@ -50,10 +73,9 @@
   &:hover,
   &:focus {
     cursor: pointer;
-    transform: scale(1.1);
-    background-color: #fff;
-    width: 40px;
+    opacity: 1;
     border-radius: 30px;
+    width: 40px;
   }
 }
 input[name='radio-pic'] {
@@ -68,7 +90,10 @@ input[name='radio-pic'] {
 .gallery-image {
   position: relative;
   width: 33.33333%;
-  // max-height: 500px;
+  transition: all 500ms ease-in-out;
+  @include tablet {
+    transition: all 800ms ease-in-out;
+  }
 }
 .gallery-image picture {
   width: 100vw;
@@ -99,24 +124,32 @@ input[name='radio-pic'] {
   font-weight: 500;
   font-size: 7.5vw;
   line-height: 8.75vw;
-  padding-bottom: 7px;
+  max-width: 87.5vw;
   @include tablet {
     font-size: 7.3vw;
     line-height: 8.6vw;
     bottom: 1.8vw;
     left: 5.3vw;
+    max-width: 75vw;
   }
   @include desktop {
     font-size: 4.4vw;
     line-height: 5.2vw;
     left: 3.8vw;
     bottom: 3.8vw;
+    max-width: 51vw;
+  }
+  @include desktop-fixed {
+    font-size: 70px;
+    line-height: 1.2;
+    bottom: 50px;
   }
 }
 .gallery-text-one {
   display: inline-block;
   max-height: 180vw;
   min-width: 94vw;
+  padding-bottom: 7px;
   background: linear-gradient(
     270deg,
     #1edde0 13.26%,
@@ -138,6 +171,9 @@ input[name='radio-pic'] {
     left: 50%;
     transform: translateX(-50%);
   }
+  @include desktop-fixed {
+    left: 750px;
+  }
 }
 .gallery-text-two {
   background: linear-gradient(
@@ -152,9 +188,13 @@ input[name='radio-pic'] {
   color: transparent;
   @include desktop {
     width: 46.2vw;
-    bottom: 3.8vw;
     left: 3.8vw;
     text-align: center;
+    //49
+  }
+  @include desktop-fixed {
+    width: 800px;
+    left: 10px;
   }
 }
 .gallery-text-two-span {
@@ -162,17 +202,25 @@ input[name='radio-pic'] {
 }
 .gallery-text-three {
   display: block;
-  min-width: 450px;
+  // min-width: 450px;
+  width: 104vw;
   background: linear-gradient(
     270deg,
-    #ffffff 13.26%,
-    #693cf9 60.87%,
-    #f475eb 107.89%
+    #ffffff 27.78%,
+    #693cf9 61.11%,
+    #f475eb 102.56%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
+  // !!!!!!!!откуда расстояние в р!!!!!!!!!!!!!!!!!!!!!!!!!!
+  // @include tablet {
+  //   width: 551px;
+  // }
+  @include desktop-fixed {
+    left: 81px;
+  }
 }
 .gallery-mob {
   display: block;
