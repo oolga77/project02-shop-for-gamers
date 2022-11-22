@@ -2,6 +2,7 @@
   background-color: var(--main-color);
   position: relative;
   padding-bottom: 20vw;
+  height: 100vhs;
   @include tablet {
     padding-top: 15.6vw;
     padding-bottom: 17vw;
@@ -95,20 +96,20 @@ input[name='radio-pic'] {
   bottom: 11.5vw;
   left: 7.5vw;
   display: inline-block;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 7.5vw;
   line-height: 8.75vw;
   padding-bottom: 7px;
-
   @include tablet {
     font-size: 7.3vw;
     line-height: 8.6vw;
-    bottom: 3.5vw;
+    bottom: 1.8vw;
     left: 5.3vw;
   }
   @include desktop {
     font-size: 4.4vw;
     line-height: 5.2vw;
+    left: 3.8vw;
     bottom: 3.8vw;
   }
 }
@@ -156,17 +157,6 @@ input[name='radio-pic'] {
     text-align: center;
   }
 }
-.gallery-text-two-mob {
-  @include tablet {
-    display: none;
-  }
-}
-.gallery-text-two-tab {
-  display: none;
-  @include tablet {
-    display: block;
-  }
-}
 .gallery-text-two-span {
   text-transform: uppercase;
 }
@@ -183,20 +173,6 @@ input[name='radio-pic'] {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
-  @include desktop {
-    width: 36.2vw;
-  }
-}
-.gallery-text-three-mob {
-  @include desktop {
-    display: none;
-  }
-}
-.gallery-text-three-desk {
-  display: none;
-  @include desktop {
-    display: block;
-  }
 }
 .gallery-mob {
   display: block;
