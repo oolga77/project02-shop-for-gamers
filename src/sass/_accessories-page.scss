@@ -80,6 +80,9 @@
     line-height: 1.18;
     padding-left: calc(50% - 245px);
   }
+  @media screen and (min-width: 1280px) {
+    padding-left: calc(50% - 757px);
+  }
 }
 .accessories-list {
   display: flex;
@@ -94,6 +97,10 @@
     flex-direction: row;
     gap: 38px;
     padding-bottom: 52px;
+  }
+  @media screen and (min-width: 1288px) {
+    row-gap: 44px;
+    column-gap: 20px;
   }
 }
 
@@ -183,7 +190,12 @@
     display: block;
   }
 }
-
+.accessories-desc {
+  display: none;
+  @media screen and (min-width: 1280px) {
+    display: block;
+  }
+}
 // line
 
 .accessories-linewrap-top,
