@@ -34,8 +34,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 767px;
+    width: 768px;
     margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 120px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -50,6 +52,8 @@
     background-size: cover;
     width: 1280px;
     margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 120px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -58,37 +62,49 @@
   }
 }
 
+.blar-contekst {
+  margin-left: 16px;
+  margin-right: 16px;
+  @include tablet {
+    margin-left: 40px;
+  }
+  @include desktop {
+    margin-left: 40px;
+  }
+}
+
 .blar-main-text {
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 24px;
   line-height: 1.16;
   color: var(--text-color);
   @include tablet {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 56px;
     line-height: 1;
     color: var(--text-color);
   }
 }
 
-.blar__decor {
+.blar-decor {
   position: relative;
-  margin-bottom: 35px;
+  margin-top: -23px;
+  margin-bottom: 31px;
   @include tablet {
     display: none;
   }
 }
 
-.border-wrap1,
-.border-wrap2 {
+.blar-border-wrap1,
+.blar-border-wrap2 {
   display: flex;
   width: 100%;
   position: absolute;
   left: 0;
 }
 
-.border-wrap1 {
+.blar-border-wrap1 {
   height: 8px;
   top: 27px;
   // @include tablet {
@@ -97,7 +113,7 @@
   // }
 }
 
-.border1 {
+.blar-border1 {
   height: 8px;
   width: 117px;
   // @include tablet {
@@ -111,7 +127,7 @@
   box-shadow: 0px 12px 25px -3px rgba(123, 227, 74, 0.25);
 }
 
-.border3 {
+.blar-border3 {
   height: 1px;
   width: calc(100% - 117px);
   // @include tablet {
@@ -121,7 +137,7 @@
   box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
 }
 
-.border-wrap2 {
+.blar-border-wrap2 {
   height: 7px;
   top: 31px;
   // @include tablet {
@@ -130,7 +146,7 @@
   // }
 }
 
-.border2 {
+.blar-border2 {
   height: 7px;
   width: 123px;
   // @include tablet {
@@ -144,7 +160,7 @@
   box-shadow: 0px 12px 25px -3px rgba(40, 120, 13, 0.25);
 }
 
-.border4 {
+.blar-border4 {
   height: 1px;
   width: calc(100% - 123px);
   // @include tablet {
@@ -194,29 +210,39 @@
   }
   display: flex;
   flex-wrap: wrap;
+  @include tablet {
+    margin-left: 20px;
+  }
+  @include desktop {
+    margin-left: 40px;
+  }
+}
+
+.blar-tab-img {
+  border-radius: 12px;
 }
 
 .blr-text-picture {
   @include tablet {
     padding-left: 40px;
-    padding-top: 100px;
+    padding-top: 85px;
   }
   @include desktop {
     display: flex;
     flex-wrap: wrap;
     padding-top: 0;
-    padding-left: 450px;
+    padding-left: 500px;
     margin-top: -340px;
   }
 }
 
 .text-picture-top {
   @media screen and (min-width: 767px) {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 24px;
     line-height: 100%;
     color: var(--accent-color);
-    width: 248px;
+    width: 134px;
     height: 48px;
   }
   @include desktop {
@@ -226,7 +252,7 @@
 
 .text-picture-bottom {
   @media screen and (max-width: 1279px) {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 24px;
     line-height: 100%;
     color: var(--second-text-color);
@@ -235,7 +261,7 @@
     height: 48px;
   }
   @include desktop {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 24px;
     line-height: 100%;
     color: var(--second-text-color);
@@ -248,7 +274,6 @@
     display: none;
   }
   width: 690px;
-  // padding-left: 121px;
 }
 
 .text-none-tabl {
@@ -266,7 +291,9 @@
 }
 
 .blar-top-text {
-  font-weight: 600;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
   font-size: 16px;
   line-height: 100%;
   color: var(--text-color);
@@ -274,7 +301,9 @@
 }
 
 .blar-bottom-text {
-  font-weight: 600;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
   font-size: 16px;
   line-height: 100%;
   color: var(--second-text-color);
@@ -360,7 +389,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
-    color: var(--accent-color);
+    color: var(--text-color);
     padding-bottom: 10px;
   }
   @include tablet {

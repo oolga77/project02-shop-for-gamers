@@ -1,28 +1,35 @@
+// .blog-page {
+//   background-color: #01383a;
+// }
+
 .blog {
   background-color: #01383a;
-  padding-top: 40px;
-  padding-bottom: 48px;
+  // padding-top: 40px;
+  // padding-bottom: 48px;
   margin: 0 auto;
   max-width: 480px;
   background-image: url(../images/img-blog-page/1x-back-tablet-blog.jpg);
+  background-image: url(../images/img-blog-page/2x-back-tablet-blog.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     max-width: 768px;
     background-image: url(../images/img-blog-page/1x-back-tablet-blog.jpg);
+    background-image: url(../images/img-blog-page/2x-back-tablet-blog.jpg);
   }
-  @media screen and (min-width: 1280px) {
+  @include desktop {
+    background-image: url(../images/img-blog-page/1x-back-desktop-blog.jpg);
     background-image: url(../images/img-blog-page/2x-back-desktop-blog.jpg);
     max-width: 1280px;
     padding-top: 120px;
-    padding-bottom: 120px;
+    // padding-bottom: 120px;
   }
 }
 // ------------Desktop--------------
 
 .blog-list__item {
-  @media screen and (min-width: 1280px) {
+  @include desktop {
     display: none;
   }
 }
@@ -46,13 +53,12 @@
 .blog-title {
   @include font(600, 24px, 1.17, null);
   color: var(--text-color);
-  @media screen and (min-width: 768px) {
+  @include tablet {
     font-size: 56px;
     line-height: 1.18;
     padding-left: 59px;
   }
-
-  @media screen and (min-width: 1280px) {
+  @include desktop {
     font-size: 56px;
     line-height: 1.18;
     padding-left: 97px;
@@ -61,37 +67,35 @@
 
 .blog-list {
   padding-top: 24px;
-  padding-bottom: 24px;
-  @media screen and (min-width: 768px) {
+  // padding-bottom: 24px;
+  @include tablet {
     padding-top: 42px;
-    padding-bottom: 42px;
+    // padding-bottom: 42px;
   }
-  @media screen and (min-width: 1280px) {
+  @include desktop {
     padding-top: 48px;
-    padding-bottom: 48px;
+    // padding-bottom: 48px;
   }
 }
 
-.blog-list__item:not(:last-child) {
+.blog-list:not(:last-child) {
   margin-bottom: 24px;
 }
 .blog-article-title {
-  font-family: 'Roboto';
+  font-family: var(--main-font);
+  @include font(500, 24, 1.16, null);
   margin-bottom: 16px;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.16;
   color: var(--text-color);
-  @media screen and (min-width: 768px) {
+  @include tablet {
     font-size: 56px;
     line-height: 1;
   }
-  @media screen and (min-width: 1280px) {
+  @include desktop {
     margin-bottom: 52px;
   }
 }
 .container-tablet-blog {
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: flex;
     gap: 40px;
     margin-bottom: 16px;
@@ -99,86 +103,81 @@
 }
 
 .container-tablet-autor {
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
   }
 }
 .blog-img {
-  min-width: 480px;
-  margin: 0 -16px 0 -16px;
-  @media screen and (min-width: 768px) {
+  margin: 0 auto;
+  @include mobile {
+    min-width: 480px;
+    margin: 0 -16px 0 -16px;
+  }
+  @include tablet {
     border-radius: 12px;
-    min-width: 387px;
     margin: 0;
   }
-  @media screen and (min-width: 1280px) {
-    min-width: 387px;
-    min-height: 364px;
+  @include desktop {
     margin: 0;
   }
 }
 .blog-autor {
   margin-top: 8px;
   margin-bottom: 8px;
-  font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1;
+  font-family: var(--main-font);
+  @include font(500, 16, 1, null);
   color: var(--text-color);
-  @media screen and (min-width: 768px) {
+  @include tablet {
     font-size: 24px;
     line-height: 1;
     margin-bottom: 32px;
     margin-top: 0;
     width: 130px;
   }
-  @media screen and (min-width: 1280px) {
+  @include desktop {
     min-width: 248px;
     margin-bottom: 0;
   }
 }
 .blog-updated {
   margin-bottom: 16px;
-  font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1;
+  font-family: var(--main-font);
+  @include font(500, 16, 1, null);
   color: var(--second-text-color);
-  @media screen and (min-width: 768px) {
+  @include tablet {
     font-size: 24px;
     line-height: 1;
     margin-bottom: 0;
   }
-  @media screen and (min-width: 1280px) {
+  @include desktop {
     margin-bottom: 0;
   }
 }
 .blog-text {
-  font-family: 'Roboto';
-  margin-bottom: 8px;
-  font-size: 16px;
-  line-height: 1.19;
+  font-family: var(--main-font);
+  @include font(400, 16, 1.19, null);
   color: var(--text-color);
-  @media screen and (min-width: 768px) {
+  @include tablet {
     font-size: 24px;
     line-height: 1.17;
   }
 }
 .blog-learn-more {
+  font-family: var(--main-font);
+  @include font(500, 16, 1, null);
   display: flex;
   justify-content: flex-end;
-  font-family: 'Roboto';
   margin-left: auto;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1;
   color: var(--accent-color);
-  @media screen and (min-width: 768px) {
+  @include tablet {
     font-size: 24px;
     line-height: 1;
   }
+  // &:hover {
+  //   font-size: 20px;
+  // }
 }
 // ------------------Border---------------------
 .container-border {
@@ -193,70 +192,124 @@
   margin: 0;
   width: 42vw;
   height: 8px;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: 34vw;
     height: 16px;
   }
-  @media screen and (min-width: 1280px) {
+  @include desktop {
     width: 20vw;
     height: 19px;
   }
   border-bottom: 1px solid #7be34a;
-  //   box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
+  // box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
   border-right: 1px solid #7be34a;
 }
 .border-top1 {
   width: 58vw;
   height: 8px;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: 66vw;
     height: 16px;
   }
-  @media screen and (min-width: 1280px) {
+  @include desktop {
     width: 80vw;
     height: 19px;
   }
   border-top: 1px solid #7be34a;
-  //   box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
+  // box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
 }
 .container-border2 {
   position: absolute;
   top: 4px;
   display: flex;
   width: 100%;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     top: 8px;
   }
-  @media screen and (min-width: 1280px) {
+  @include desktop {
     top: 8px;
   }
 }
 .border-bottom2 {
   width: 43vw;
   height: 7px;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: 35vw;
     height: 16px;
   }
-  @media screen and (min-width: 1280px) {
+  @include desktop {
     width: 21vw;
     height: 19px;
   }
   border-bottom: 1px solid #28780d;
-  //   box-shadow: 0px 4px 25px rgba(40, 120, 13, 0.25);
+  box-shadow: 0px 4px 25px rgba(40, 120, 13, 0.25);
   border-right: 1px solid #28780d;
 }
 .border-top2 {
   width: 57vw;
   height: 7px;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: 65vw;
     height: 16px;
   }
-  @media screen and (min-width: 1280px) {
+  @include desktop {
     width: 79vw;
     height: 19px;
   }
   border-top: 1px solid #28780d;
-  //   box-shadow: 0px 4px 25px rgba(40, 120, 13, 0.25);
+  // box-shadow: 0px 4px 25px rgba(40, 120, 13, 0.25);
+}
+
+// --------Animation------------------------
+.center_circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 48px;
+  padding-top: 48px;
+  @include tablet {
+    padding-top: 35px;
+    padding-bottom: 120px;
+  }
+  @include desktop {
+    padding-top: 48px;
+    padding-bottom: 120px;
+  }
+}
+.circle {
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  border-radius: 7px;
+  margin: 16px;
+  animation: wave 1s linear infinite;
+}
+.circle:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.circle:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.circle:nth-child(4) {
+  animation-delay: 0.5s;
+}
+.circle:nth-child(5) {
+  animation-delay: 0.7s;
+}
+@keyframes circle {
+  0% {
+    transform: scaleX(0) scaleY(0);
+  }
+  25% {
+    transform: scaleX(0.5) scaleY(0.5);
+  }
+  50% {
+    transform: scaleX(2) scaleY(1);
+  }
+  75% {
+    transform: scaleX(0.5) scaleY(0.5);
+  }
+  100% {
+    transform: scaleX(0) scaleY(0);
+  }
 }

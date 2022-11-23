@@ -44,7 +44,7 @@
 }
 
 .contacts-title {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 24px;
     line-height: 1.17;
     color: var(--text-color);
@@ -102,8 +102,15 @@
         color: var(--text-color);
         margin-top: 16px;
 
+        @media screen and (min-width: 480px) {
+                max-width: 288px;     
+            }
+
 
         @media screen and (min-width: 768px) {
+            font-size: 24px;
+                line-height: 1.17;
+                max-width: 488px;
         margin-top: 32px;          
         }
         @media screen and (min-width: 1200px){
@@ -158,6 +165,11 @@ display: block;
         font-size: 16px;
         line-height: 1.19;
         color: var(--text-color);
+
+        @media screen and (min-width: 768px) {
+                font-size: 24px;
+                line-height: 1.17;
+            }
 }
 
 .contacts-mail {
@@ -168,6 +180,12 @@ display: block;
         color: #8D9289;
         margin-top: 8px;
         margin-bottom: 24px;
+
+        @media screen and (min-width: 768px) {
+                font-size: 24px;
+                line-height: 1.17;
+            }
+
         @media screen and (min-width: 1200px){
             margin-top: 0px;
             margin-bottom: 0px;
@@ -181,6 +199,12 @@ display: block;
     
         color: var(--text-color);
         margin-bottom: 8px;
+
+        @media screen and (min-width: 768px) {
+                font-size: 24px;
+                line-height: 1.17;
+            }
+
         @media screen and (min-width: 1200px){
             margin-top: 40px;
         }
@@ -191,6 +215,13 @@ display: block;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 8px;
+
+    @media screen and (min-width: 768px) {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 1.17;
+        }
+
     @media screen and (min-width: 1200px){
     display:block;
     }
@@ -224,7 +255,7 @@ display: block;
     display: block;
 }
 .contacts-us {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 24px;
     line-height: 1.17;
     margin-bottom: 16px;
@@ -233,7 +264,7 @@ display: block;
     color: #86E543;
 
         @media screen and (min-width: 768px) {
-        font-weight: 600;
+        font-weight: 500;
             font-size: 36px;
             line-height: 42px;
             padding-left: 49px;
@@ -256,7 +287,7 @@ display: block;
 
 .contacts-form-list {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 40px;
 }
@@ -288,19 +319,30 @@ display: block;
         text-transform: capitalize;
     
         color: var(--text-color);
+
+        @media screen and (min-width: 768px) {
+                font-size: 18px;
+                line-height: 1.11;
+            }
 }
 
 .label-text-textarea {
+    display: block;
     font-weight: 400;
         font-size: 16px;
         line-height: 1.25;
         color: #CDCDCD;
         margin-bottom: 4px;
+
+        @media screen and (min-width: 768px) {
+                font-size: 18px;
+                line-height: 1.11;
+            }
 }
 
 textarea {
     resize: none;
-    width: 100%;
+    width: 289px;
     height: 95px;
     padding-left: 16px;
     background-color: transparent;
@@ -332,8 +374,7 @@ textarea {
 
 .contacts-btn {
     display: block;
-    margin-right: 0 auto;
-    margin-left: 0 auto;
+    margin: 0 auto;
     min-width: 173px;
     height: 51px;
     background-color: transparent;
@@ -358,4 +399,134 @@ textarea {
             margin-left: 0;
 
         }
+}
+
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 20, 20, 0.8);
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &.is-hidden {
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+
+        & .modal {
+            transform: translate(-50%, -50%) scale(0.5);
+        }
+    }
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: var(--main-color);
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    transform: translate(-50%, -50%) scale(1);
+
+    @media screen and (min-width: 480px) {
+        width: 272px;
+        height: 395px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 688px;
+        height: 524px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 768px;
+        height: 524px;
+    }
+}
+
+.modal-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    border: 1.5px solid #86e543;
+    border-radius: 50%;
+    background-color: transparent;
+    fill: #86E543;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        filter: drop-shadow(0px 4px 10px rgba(134, 229, 67, 0.1)) drop-shadow(0px 4px 20px rgba(134, 229, 67, 0.4));
+    }
+}
+
+.modal-text {
+
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    text-align: center;
+
+    color: #ffffff;
+    padding-bottom: 32px;
+    padding-top: 100px;
+
+    @media screen and (min-width: 768px) {
+        font-weight: 500;
+        font-size: 56px;
+        line-height: 1.18;
+        padding: 88px 26px 80px 26px;
+
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-weight: 600;
+        font-size: 56px;
+        line-height: 66px;
+        padding: 88px 66px 80px 66px;
+
+    }
+}
+
+.contacts-modal-link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.19;
+
+    text-transform: uppercase;
+    text-align: center;
+
+    color: #01383a;
+    display: block;
+    margin: 0 auto;
+    width: 173px;
+    height: 51px;
+    background: #86e543;
+    border-radius: 16px;
+    border: none;
+    padding: 16px 75px;
+
+    @media screen and (min-width:768px) {
+        width: 306px;
+        height: 70px;
+        padding: 16px 132px;
+    }
+}
+
+.modal-icon-cloce {
+    fill: #86e543;
 }

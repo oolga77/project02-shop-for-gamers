@@ -1,24 +1,33 @@
-
- .footer {
-   background: #001414;
+.footer {
+  background: #001414;
+}
+ .footer-content {
+   
    padding: 25px 32px 25px 15px;
    margin-left: auto;
    margin-right: auto;
-   max-width: 1280px;
+   max-width: 1600px;
    color: #FFFFFF;
  }
+ @media screen and (min-width: 320px) {
+  .footer-content {
+    max-width: 320px;
+  }
+ }
  @media screen and (min-width: 768px) {
-   .footer {
+   .footer-content {
      display: flex;
      justify-content: space-between;
      align-items: center;
      padding: 40px;
+     max-width: 768px;
    }
  }
  @media screen and (min-width: 1280px) {
-   .footer {
+   .footer-content {
      justify-content: start;
      gap: 20px;
+     max-width: 1280px;
    }
  } 
  .footer-container {
@@ -108,7 +117,15 @@
    font-size: 16px;
    line-height: 1.19;
    color: #8D9289;
- } 
+ }
+ .footer-mail:hover,
+ .footer-mail:focus {
+  
+  border-radius: 4px;
+   -webkit-box-shadow: inset 0px 0px 3px 2px rgba(134,229,67,0.4);
+   -moz-box-shadow: inset 0px 0px 3px 2px rgba(134,229,67,0.4);
+   box-shadow: inset 0px 0px 3px 2px rgba(134,229,67,0.4);
+ }
  .footer-tel {
    font-family: "Roboto";   
    font-size: 16px;
@@ -117,6 +134,14 @@
    text-transform: capitalize;
    color: #8D9289;
  } 
+ .footer-tel:hover,
+ .footer-tel:focus {
+  border-radius: 4px;
+   -webkit-box-shadow: inset 0px 0px 3px 2px rgba(134,229,67,0.4);
+   -moz-box-shadow: inset 0px 0px 3px 2px rgba(134,229,67,0.4);
+   box-shadow: inset 0px 0px 3px 2px rgba(134,229,67,0.4);
+
+ }
  .footer-list-link li:not(:last-child) {
    margin-bottom: 8px;
  } 
@@ -153,6 +178,16 @@
    justify-content: center;
    align-items: center;
  } 
+ .footer-link-svg:hover,
+ .footer-link-svg:focus {
+   
+  border: 3px solid #86E543;
+  border-left: 1px solid #86E543;
+  border-right: 1px solid #86E543;
+  -webkit-box-shadow: 0px 0px 42px 4px rgba(131,207,133,0.93);
+  -moz-box-shadow: 0px 0px 42px 4px rgba(131,207,133,0.93);
+  box-shadow: 0px 0px 42px 4px rgba(131,207,133,0.93);
+ }
  .footer-svg {
    fill: #000;
  }
