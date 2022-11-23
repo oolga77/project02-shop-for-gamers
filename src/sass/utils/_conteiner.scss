@@ -29,6 +29,6 @@
   //desktop-style
 
   @include desktop {
-    width: 1280px;
+    min-width: 1280px;
   }
 }
