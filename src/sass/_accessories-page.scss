@@ -117,13 +117,14 @@
   border-radius: 12px;
   overflow: hidden;
 }
+
 .accessories-picture-title {
-  max-width: 261px;
+  width: 269px;
   padding-left: 8px;
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 22px;
-  line-height: 26px;
+  line-height: 1.18;
   color: var(--accent-color);
 }
 .accessories-price-normal {
