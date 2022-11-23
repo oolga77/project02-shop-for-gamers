@@ -2,7 +2,7 @@
   position: relative;
   max-width: 1600px;
   margin: 0 auto;
-  padding-bottom: 88px;
+  padding-bottom: 40px;
   background-color: var(--main-color);
   background-image: url(../images/img-gallery/gallery-bg.jpg);
   background-repeat: no-repeat;
@@ -28,7 +28,6 @@
   font-size: 18px;
   background: #fff;
 
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -65,7 +64,7 @@
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
   position: absolute;
-  bottom: 48px;
+  bottom: 8px;
   @include tablet {
     bottom: 120px;
   }
@@ -74,7 +73,6 @@
 .swiper-pagination-horizontal.swiper-pagination-bullets
   .swiper-pagination-bullet {
   background-color: var(--text-color);
-  // width: 16px;
   height: 16px;
 }
 .swiper-pagination-bullet {
@@ -95,7 +93,7 @@
 .gallery-text {
   display: block;
   position: absolute;
-  bottom: 11.5vw;
+  bottom: 9vw;
   left: 7.5vw;
   display: inline-block;
   font-weight: 500;
@@ -170,7 +168,6 @@
 }
 .gallery-text-three {
   display: block;
-  // min-width: 450px;
   width: 104vw;
   background: linear-gradient(
     270deg,
