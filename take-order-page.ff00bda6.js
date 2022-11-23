@@ -1,0 +1,2 @@
+var quantityMenu=document.querySelector("[select-menu-qt]"),quantityBtn=quantityMenu.querySelector("[select-btn-qt]"),options_qt=quantityMenu.querySelectorAll("[option-qt]"),Btn_text=quantityMenu.querySelector("[sBtn-text-qt]");quantityBtn.addEventListener("click",(function(){return quantityMenu.classList.toggle("active")})),options_qt.forEach((function(t){t.addEventListener("click",(function(){var e=t.querySelector("[option-text-qt]").innerText;Btn_text.innerText=e,quantityMenu.classList.remove("active")}))}));
+//# sourceMappingURL=take-order-page.ff00bda6.js.map

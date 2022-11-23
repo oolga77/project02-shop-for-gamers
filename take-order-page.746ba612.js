@@ -1,0 +1,2 @@
+var payMenu=document.querySelector("[select-menu-pay]"),payBtn=payMenu.querySelector("[select-btn-pay]"),optionsPay=payMenu.querySelectorAll("[option-pay]"),sBtn_Pay=payMenu.querySelector("[sBtn-text-pay]");payBtn.addEventListener("click",(function(){return payMenu.classList.toggle("active")})),optionsPay.forEach((function(e){e.addEventListener("click",(function(){var t=e.querySelector("[option-text-pay]").innerText;sBtn_Pay.innerText=t,payMenu.classList.remove("active")}))}));
+//# sourceMappingURL=take-order-page.746ba612.js.map

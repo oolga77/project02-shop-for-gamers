@@ -1,0 +1,2 @@
+var optionMenu=document.querySelector("[select-menu]"),selectBtn=optionMenu.querySelector("[select-btn]"),options=optionMenu.querySelectorAll("[option]"),sBtn_text=optionMenu.querySelector("[sBtn-text]");selectBtn.addEventListener("click",(function(){return optionMenu.classList.toggle("active")})),options.forEach((function(e){e.addEventListener("click",(function(){var t=e.querySelector("[option-text]").innerText;sBtn_text.innerText=t,optionMenu.classList.remove("active")}))}));
+//# sourceMappingURL=take-order-page.b926e5b5.js.map
