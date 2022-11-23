@@ -1,9 +1,5 @@
-.fon {
-  background-color: #01383a;
-}
-
 .sale {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--main-font);
   font-style: normal;
   margin-right: auto;
   margin-left: auto;
@@ -50,9 +46,7 @@
 
 .sale-title {
   @include font(600, 24, 1.17, null);
-  color: #ffffff;
-  // margin-bottom: 35px;
-  // padding-left: 64px;
+  color: var(--text-color);
   padding-left: calc(100% / 2 - 80px);
   @include mobile {
     padding-left: 144px;
@@ -191,7 +185,7 @@
     width: 244px;
     box-shadow: 0px 23px 25px -10px rgba(123, 227, 74, 0.25);
   }
-  border: 1px solid #7be34a;
+  border: 1px solid var(--line-top);
   border-top: none;
   border-left: none;
   box-shadow: 0px 12px 25px -3px rgba(123, 227, 74, 0.25);
@@ -206,7 +200,7 @@
   @include tablet {
     width: calc(100% - 244px);
   }
-  border-top: 1px solid #7be34a;
+  border-top: 1px solid var(--line-top);
   box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
 }
 
@@ -230,7 +224,7 @@
     width: 254px;
     box-shadow: 0px 23px 25px -10px rgba(40, 120, 13, 0.25);
   }
-  border: 1px solid #28780d;
+  border: 1px solid var(--line-bottom);
   border-top: none;
   border-left: none;
   box-shadow: 0px 12px 25px -3px rgba(40, 120, 13, 0.25);
@@ -245,7 +239,7 @@
   @include tablet {
     width: calc(100% - 254px);
   }
-  border-top: 1px solid #28780d;
+  border-top: 1px solid var(--line-bottom);
   box-shadow: 0px 4px 25px rgba(40, 120, 13, 0.25);
 }
 
@@ -393,12 +387,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 195px;
   margin: 0 auto;
   padding: 16px 48px;
   background-color: var(--text-color);
   border-radius: 16px;
   border: none;
-  font-family: inherit;
   @include font(700, 16, 1.19, null);
   text-align: center;
   color: var(--main-color);
