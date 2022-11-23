@@ -73,8 +73,11 @@
         align-items: center;
         justify-content: center;
 
+        @media screen and (min-width: 480px) {
+                width: 450px;
+            }
+
         @media screen and (min-width: 768px) {
-                height: 346px;
                 width: 688px;
             }
         @media screen and (min-width: 1200px){
@@ -94,7 +97,7 @@
     @media screen and (min-width: 1200px){
     display: flex;
     justify-content: space-between;
-    margin-bottom: 128px;
+    
 }
 }
 .contacts-line{
@@ -343,6 +346,16 @@ display: block;
         }
 }
 .contacts-bottom{
+    @media screen and (min-width: 480px) {
+            
+            max-width: 288px;
+        }
+
+                @media screen and (min-width: 768px) {
+                    padding-left: 49px;
+                    max-width: 592px;
+                }
+
     @media screen and (min-width: 1200px){
     margin-top: 58px;
     margin-left: 60px;
@@ -365,7 +378,6 @@ display: block;
         font-weight: 500;
             font-size: 36px;
             line-height: 42px;
-            padding-left: 49px;
             margin-bottom: 48px;
         }
         @media screen and (min-width: 1200px) {
@@ -373,15 +385,6 @@ display: block;
         }
 }
 
-.contacts-form {
-    
-                @media screen and (min-width: 768px) {
-                    padding-left: 49px;
-                }
-                @media screen and (min-width: 1200px){
-                    padding-left: 0px;
-                }
-}
 
 .contacts-form-list {
     display: flex;
@@ -397,10 +400,15 @@ display: block;
     border-left: none;
     border-right: none;
     cursor: pointer;
+
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.25;
+        color: var(--text-color);
     
         width: 288px;
         @media screen and (min-width: 768px) {
-            width: 591px;
+            width: 543px;
         }
 }
 
@@ -449,7 +457,7 @@ textarea {
 
         @media screen and (min-width: 768px) {
             height: 120px;
-            width: 589px;
+            width: 543px;
         }
     
     
@@ -490,6 +498,7 @@ textarea {
             font-size: 32px;
             line-height: 1.19;
             min-width: 306px;
+            
         }
         @media screen and (min-width: 1200px){
             margin-top: 46px;
@@ -618,11 +627,20 @@ textarea {
     border: none;
     padding: 16px 75px;
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width: 768px) {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 1.19;
         width: 306px;
         height: 70px;
         padding: 16px 132px;
     }
+
+        @media screen and (min-width: 1280px) {
+        font-weight: 700;
+            font-size: 32px;
+            line-height: 1.19;
+        }
 }
 
 .modal-icon-cloce {
