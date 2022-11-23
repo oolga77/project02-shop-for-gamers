@@ -210,11 +210,15 @@
   }
   display: flex;
   flex-wrap: wrap;
-  margin-left: -1px;
+  @include tablet {
+    margin-left: 20px;
+  }
+  @include desktop {
+    margin-left: 40px;
+  }
 }
 
 .blar-tab-img {
-  margin-left: -20px;
   border-radius: 12px;
 }
 
