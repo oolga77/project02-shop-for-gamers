@@ -117,13 +117,17 @@
   border-radius: 12px;
   overflow: hidden;
 }
-.accessories-picture-title {
-  max-width: 261px;
+.accessories-picture-title-sec {
+  width: 285px;
   padding-left: 8px;
+  padding-right: 16px;
+}
+.accessories-picture-title {
+  width: 261px;
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 22px;
-  line-height: 26px;
+  line-height: 1.18;
   color: var(--accent-color);
 }
 .accessories-price-normal {
