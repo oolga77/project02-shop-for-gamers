@@ -1,12 +1,12 @@
 .gallery-section {
   position: relative;
-  max-width: 1600px;
+  max-width: 1280px;
   margin: 0 auto;
   padding-bottom: 40px;
   background-color: var(--main-color);
   background-image: url(../images/img-gallery/gallery-bg.jpg);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-size: cover;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -50,7 +50,6 @@
   height: 100%;
   object-fit: cover;
 }
-
 .swiper-button-prev:after {
   color: var(--text-color);
   opacity: 0.6;
@@ -121,8 +120,7 @@
   }
 }
 .gallery-text-one {
-  display: inline-block;
-  padding-bottom: 7px;
+  padding-bottom: 0.9vw;
   background: linear-gradient(
     270deg,
     #1edde0 13.26%,
@@ -193,5 +191,10 @@
   display: none;
   @include tablet {
     display: block;
+  }
+}
+.animate__animated {
+  @include desktop {
+    left: 30%;
   }
 }
