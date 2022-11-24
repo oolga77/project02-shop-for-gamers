@@ -50,14 +50,6 @@
   height: 100%;
   object-fit: cover;
 }
-.swiper-button-prev:after {
-  color: var(--text-color);
-  opacity: 0.6;
-}
-.swiper-button-next:after {
-  color: var(--text-color);
-  opacity: 0.6;
-}
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
