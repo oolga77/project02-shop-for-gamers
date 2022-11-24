@@ -1,7 +1,7 @@
 .hero {
     background-image: url(../images/img-hero/hero2mob.png), url(../images/img-hero/heromob.jpg);
     background-size: contain, cover;
-    background-position: top right, center;
+    background-position: 100% -47px, center;
     background-repeat: no-repeat;
 
     @media (min-device-pixel-ratio: 2),
@@ -29,7 +29,7 @@
 
     @media screen and (min-width: 1280px) {
         background-image: url(../images/img-hero/hero2desc.png), url(../images/img-hero/herodesc.jpg);
-        background-size: contain, cover;
+        background-size: contain, contain;
         background-position: top right, center;
 
 
@@ -82,10 +82,11 @@
 
 @media screen and (min-width: 768px) {
     .hero_wrap {
-        padding-top: 154px;
-        padding-bottom: 301px;
-        padding-left: 40px;
-        padding-right: 340px;
+        padding: 154px 340px 128px 40px;
+    }
+    
+    .hero_container {
+        height: 695px;
     }
 
     .hero_title {
@@ -123,7 +124,7 @@
     .hero_wrap {
         padding-top: 180px;
         padding-right: 623px;
-        padding-bottom: 203px;
+        padding-bottom: 209px;
         padding-left: 142px;
     }
 
