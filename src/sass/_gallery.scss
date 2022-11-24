@@ -50,14 +50,6 @@
   height: 100%;
   object-fit: cover;
 }
-.swiper-button-prev:after {
-  color: var(--text-color);
-  opacity: 0.6;
-}
-.swiper-button-next:after {
-  color: var(--text-color);
-  opacity: 0.6;
-}
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
@@ -198,3 +190,27 @@
     left: 30%;
   }
 }
+
+// const swiper = new Swiper('.swiper', {
+//    // Optional parameters
+//    direction: 'horizontal',
+//    //   direction: 'vertical',
+//    loop: true,
+
+//    // If we need pagination
+//    pagination: {
+//      el: '.swiper-pagination',
+//      clickable: true, // что-бы сделать пагинацию кликабельной
+//    },
+
+//    // Navigation arrows
+//    navigation: {
+//      nextEl: '.swiper-button-next',
+//      prevEl: '.swiper-button-prev',
+//    },
+
+//    // And if we need scrollbar
+//    scrollbar: {
+//      el: '.swiper-scrollbar',
+//    },
+//  });
