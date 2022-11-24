@@ -43,10 +43,6 @@
     }
 }
 
-.hero {
-    margin: 0 auto;
-}
-
 .hero_wrap {
     padding-top: 197px;
     padding-bottom: 102px;
@@ -87,7 +83,7 @@
 @media screen and (min-width: 768px) {
     .hero_wrap {
         padding-top: 154px;
-        padding-bottom: 328px;
+        padding-bottom: 301px;
         padding-left: 40px;
         padding-right: 340px;
     }
@@ -123,11 +119,6 @@
 }
 
 @media screen and (min-width: 1280px) {
-
-    .hero {
-        width: 1280px;
-    }
-
 
     .hero_wrap {
         padding-top: 180px;
