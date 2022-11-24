@@ -98,7 +98,7 @@
   @include tablet {
     box-shadow: 0px 23px 25px -10px rgba(123, 227, 74, 0.25);
   }
-  border-bottom: 1px solid #7be34a;
+  border-bottom: 1px solid var(--line-top);
   box-shadow: 0px 12px 25px -3px rgba(123, 227, 74, 0.25);
 }
 
@@ -107,7 +107,7 @@
   @include tablet {
     box-shadow: 0px 23px 25px -10px rgba(40, 120, 13, 0.25);
   }
-  border-bottom: 1px solid #28780d;
+  border-bottom: 1px solid var(--line-bottom);
   box-shadow: 0px 12px 25px -3px rgba(40, 120, 13, 0.25);
 }
 
@@ -130,13 +130,13 @@
 
 .sale__line3 {
   height: 1px;
-  border-top: 1px solid #7be34a;
+  border-top: 1px solid var(--line-top);
   box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
 }
 
 .sale__line4 {
   height: 1px;
-  border-top: 1px solid #28780d;
+  border-top: 1px solid var(--line-bottom);
   box-shadow: 0px 4px 25px rgba(40, 120, 13, 0.25);
 }
 
@@ -396,6 +396,7 @@
   @include font(700, 16, 1.19, null);
   text-align: center;
   color: var(--main-color);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.5),
