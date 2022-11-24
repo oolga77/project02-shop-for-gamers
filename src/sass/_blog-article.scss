@@ -5,8 +5,10 @@
   background-position: center;
   background-size: cover;
   margin: 0 auto;
-  padding-top: 40px;
-  padding-bottom: 48px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  // padding-t  op: 40px;
+  // padding-bottom: 48px;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -20,8 +22,8 @@
     background-size: cover;
     width: 480px;
     margin: 0 auto;
-    padding-top: 40px;
-    padding-bottom: 48px;
+    // padding-top: 40px;
+    // padding-bottom: 48px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -37,7 +39,7 @@
     width: 768px;
     margin: 0 auto;
     padding-top: 40px;
-    padding-bottom: 120px;
+    // padding-bottom: 120px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -53,7 +55,7 @@
     width: 1280px;
     margin: 0 auto;
     padding-top: 40px;
-    padding-bottom: 120px;
+    padding-bottom: 30px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -63,17 +65,39 @@
 }
 
 .blar-contekst {
+  @media screen and (min-width: 480px) {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 480px;
+    margin: 0 auto;
+  }
   margin-left: 16px;
   margin-right: 16px;
   @include tablet {
     margin-left: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 768px;
+    margin: 0 auto;
   }
   @include desktop {
-    margin-left: 40px;
+    // margin-left: 160px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 1280px;
+    margin: 0 auto;
   }
 }
 
 .blar-main-text {
+  @media screen and (min-width: 480px) {
+    width: 460px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -84,16 +108,17 @@
     font-size: 56px;
     line-height: 1;
     color: var(--text-color);
+    width: 768px;
+    padding-bottom: 30px;
+  }
+  @include desktop {
+    width: 1280px;
   }
 }
 
 .blar-decor {
   position: relative;
-  margin-top: -23px;
-  margin-bottom: 31px;
-  @include tablet {
-    display: none;
-  }
+  margin-top: -40px;
 }
 
 .blar-border-wrap1,
@@ -107,20 +132,20 @@
 .blar-border-wrap1 {
   height: 8px;
   top: 27px;
-  // @include tablet {
-  //   height: 19px;
-  //   top: 66px;
-  // }
+  @include tablet {
+    height: 19px;
+    top: 4px;
+  }
 }
 
 .blar-border1 {
   height: 8px;
   width: 117px;
-  // @include tablet {
-  //   height: 19px;
-  //   width: 244px;
-  //   box-shadow: 0px 23px 25px -10px rgba(123, 227, 74, 0.25);
-  // }
+  @include tablet {
+    height: 19px;
+    width: 254px;
+    box-shadow: 0px 23px 25px -10px rgba(123, 227, 74, 0.25);
+  }
   border: 1px solid #7be34a;
   border-top: none;
   border-left: none;
@@ -130,9 +155,9 @@
 .blar-border3 {
   height: 1px;
   width: calc(100% - 117px);
-  // @include tablet {
-  //   width: calc(100% - 244px);
-  // }
+  @include tablet {
+    width: calc(100% - 244px);
+  }
   border-top: 1px solid #7be34a;
   box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
 }
@@ -140,20 +165,20 @@
 .blar-border-wrap2 {
   height: 7px;
   top: 31px;
-  // @include tablet {
-  //   height: 19px;
-  //   top: 75px;
-  // }
+  @include tablet {
+    height: 19px;
+    top: 9px;
+  }
 }
 
 .blar-border2 {
   height: 7px;
   width: 123px;
-  // @include tablet {
-  //   height: 19px;
-  //   width: 254px;
-  //   box-shadow: 0px 23px 25px -10px rgba(40, 120, 13, 0.25);
-  // }
+  @include tablet {
+    height: 19px;
+    width: 258px;
+    box-shadow: 0px 23px 25px -10px rgba(40, 120, 13, 0.25);
+  }
   border: 1px solid #28780d;
   border-top: none;
   border-left: none;
@@ -163,9 +188,9 @@
 .blar-border4 {
   height: 1px;
   width: calc(100% - 123px);
-  // @include tablet {
-  //   width: calc(100% - 254px);
-  // }
+  @include tablet {
+    width: calc(100% - 254px);
+  }
   border-top: 1px solid #28780d;
   box-shadow: 0px 4px 25px rgba(40, 120, 13, 0.25);
 }
