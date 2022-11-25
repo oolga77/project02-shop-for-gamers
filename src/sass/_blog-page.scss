@@ -1,10 +1,10 @@
 .blog {
   position: relative;
   background-color: var(--main-color);
-  padding-bottom: 48px;
   margin: auto auto;
 }
 .fon-blog-container {
+  padding-top: 40px;
   padding-bottom: 48px;
   max-width: 480px;
   background-image: url(../images/img-blog-page/1x-back-tablet-blog.jpg);
@@ -14,7 +14,7 @@
   background-position: center center;
   @include tablet {
     padding-bottom: 35px;
-    padding-top: 70px;
+    padding-top: 120px;
     max-width: 768px;
     background-image: url(../images/img-blog-page/1x-back-tablet-blog.jpg);
     background-image: url(../images/img-blog-page/2x-back-tablet-blog.jpg);
@@ -23,7 +23,6 @@
     background-image: url(../images/img-blog-page/1x-back-desktop-blog.jpg);
     background-image: url(../images/img-blog-page/2x-back-desktop-blog.jpg);
     max-width: 1280px;
-    padding-top: 70px;
     padding-bottom: 48px;
   }
 }
