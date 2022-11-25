@@ -1,2 +1,0 @@
-function app(){var t=document.querySelectorAll(".button"),a=document.querySelectorAll(".box");t.forEach((function(t){t.addEventListener("click",(function(){var e,l=t.dataset.filter;e=l,a.forEach((function(t){var a=!t.classList.contains(e),l="all"===e.toLowerCase();a&&!l?t.classList.add("visually-hidden"):t.classList.remove("visually-hidden")}))}))}))}app();
-//# sourceMappingURL=accessories-page.6d6e3a20.js.map

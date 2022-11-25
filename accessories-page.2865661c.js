@@ -1,0 +1,2 @@
+function app(){var e=document.querySelectorAll(".accessories-button"),s=document.querySelectorAll(".accessories-item");e.forEach((function(e){e.addEventListener("click",(function(){var t,c=e.dataset.filter;t=c,s.forEach((function(e){var s=!e.classList.contains(t),c="all"===t.toLowerCase();s&&!c?e.classList.add("is-hidden"):e.classList.remove("is-hidden")}))}))}))}app();
+//# sourceMappingURL=accessories-page.2865661c.js.map
