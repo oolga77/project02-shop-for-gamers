@@ -1,5 +1,5 @@
 .hero {
-    background-image: url(../images/img-hero/hero2mob.png), url(../images/img-hero/heromob.jpg);
+    background-image: url(../images/img-hero/hero2mob.png), url(../images/img-hero/heromobtwo.jpg);
     background-size: contain, cover;
     background-position: 100% -47px, center;
     background-repeat: no-repeat;
@@ -8,12 +8,12 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         & {
-            background-image: url(../images/img-hero/hero2mob@2x.png), url(../images/img-hero/heromob@2x.jpg);
+            background-image: url(../images/img-hero/hero2mob@2x.png), url(../images/img-hero/heromobtwo@2x.jpg);
         }
     }
 
     @media screen and (min-width: 768px) {
-        background-image: url(../images/img-hero/hero2tab.png), url(../images/img-hero/herotab.jpg);
+        background-image: url(../images/img-hero/hero2tab.png), url(../images/img-hero/herotablettwo.jpg);
         background-size: contain, cover;
         background-position: top 33px right 0, center;
         background-repeat: no-repeat;
@@ -22,7 +22,7 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             & {
-                background-image: url(../images/img-hero/hero2tab@2x.png), url(../images/img-hero/herotab2x.jpg);
+                background-image: url(../images/img-hero/hero2tab@2x.png), url(../images/img-hero/herotablettwo@2x.jpg);
             }
         }
     }
@@ -74,7 +74,7 @@
     color: var(--main-color);
     background: var(--accent-color);
     border-radius: 16px;
-
+    margin-bottom: 102px;
     display: flex;
     justify-content: center;
     align-items: center;
