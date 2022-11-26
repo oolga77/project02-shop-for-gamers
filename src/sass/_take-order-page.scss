@@ -2,7 +2,7 @@
   position: relative;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   @media screen and (max-width: 468px) {
     background-image: url(../images/img-take-order/bcg-1.jpg);
     @include retina {
@@ -413,12 +413,12 @@
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
-    & .modal {
+    & .order-modal {
       transform: translate(-50%, -50%) scale(0.5);
     }
   }
 }
-.modal {
+.order-modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -456,7 +456,7 @@
     }
   }
 }
-.modal-wrapper {
+.order-modal-wrapper {
   text-align: center;
   padding: 100px 44px;
   @media screen and (min-width: 768px) {
