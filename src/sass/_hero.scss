@@ -1,19 +1,19 @@
 .hero {
-    background-image: url(../images/img-hero/hero2mob.png), url(../images/img-hero/heromob.jpg);
+    background-image: url(../images/img-hero/hero2mob.png), url(../images/img-hero/heromobtwo.jpg);
     background-size: contain, cover;
-    background-position: top right, center;
+    background-position: 100% -47px, center;
     background-repeat: no-repeat;
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         & {
-            background-image: url(../images/img-hero/hero2mob@2x.png), url(../images/img-hero/heromob@2x.jpg);
+            background-image: url(../images/img-hero/hero2mob@2x.png), url(../images/img-hero/heromobtwo@2x.jpg);
         }
     }
 
     @media screen and (min-width: 768px) {
-        background-image: url(../images/img-hero/hero2tab.png), url(../images/img-hero/herotab.jpg);
+        background-image: url(../images/img-hero/hero2tab.png), url(../images/img-hero/herotablettwo.jpg);
         background-size: contain, cover;
         background-position: top 33px right 0, center;
         background-repeat: no-repeat;
@@ -22,14 +22,14 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             & {
-                background-image: url(../images/img-hero/hero2tab@2x.png), url(../images/img-hero/herotab2x.jpg);
+                background-image: url(../images/img-hero/hero2tab@2x.png), url(../images/img-hero/herotablettwo@2x.jpg);
             }
         }
     }
 
     @media screen and (min-width: 1280px) {
         background-image: url(../images/img-hero/hero2desc.png), url(../images/img-hero/herodesc.jpg);
-        background-size: contain, cover;
+        background-size: contain, contain;
         background-position: top right, center;
 
 
@@ -41,10 +41,6 @@
             }
         }
     }
-}
-
-.hero {
-    margin: 0 auto;
 }
 
 .hero_wrap {
@@ -78,7 +74,7 @@
     color: var(--main-color);
     background: var(--accent-color);
     border-radius: 16px;
-
+    margin-bottom: 102px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,10 +82,11 @@
 
 @media screen and (min-width: 768px) {
     .hero_wrap {
-        padding-top: 154px;
-        padding-bottom: 328px;
-        padding-left: 40px;
-        padding-right: 340px;
+        padding: 154px 340px 128px 40px;
+    }
+    
+    .hero_container {
+        height: 695px;
     }
 
     .hero_title {
@@ -124,15 +121,10 @@
 
 @media screen and (min-width: 1280px) {
 
-    .hero {
-        width: 1280px;
-    }
-
-
     .hero_wrap {
         padding-top: 180px;
         padding-right: 623px;
-        padding-bottom: 203px;
+        padding-bottom: 209px;
         padding-left: 142px;
     }
 
