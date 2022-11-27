@@ -1,3 +1,6 @@
+.blog-page {
+  font-family: var(--main-font);
+}
 .blog {
   position: relative;
   background-color: var(--main-color);
@@ -76,7 +79,6 @@
 }
 
 .blog-article-title {
-  font-family: var(--main-font);
   @include font(500, 24, 1.16, null);
   margin-bottom: 16px;
   color: var(--text-color);
@@ -123,7 +125,6 @@
 .blog-autor {
   margin-top: 8px;
   margin-bottom: 8px;
-  font-family: var(--main-font);
   @include font(500, 16, 1, 0);
   color: var(--text-color);
   @include tablet {
@@ -140,7 +141,6 @@
 }
 .blog-updated {
   margin-bottom: 16px;
-  font-family: var(--main-font);
   @include font(500, 16, 1, 0);
   color: var(--second-text-color);
   @include tablet {
@@ -153,7 +153,6 @@
   }
 }
 .blog-text {
-  font-family: var(--main-font);
   @include font(400, 16, 1.19, 0);
   color: var(--text-color);
   margin-bottom: 8px;
@@ -166,7 +165,6 @@
 .blog-learn-more {
   width: 82px;
   position: relative;
-  font-family: var(--main-font);
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 400ms;
   @include font(500, 16, 1, 0);
