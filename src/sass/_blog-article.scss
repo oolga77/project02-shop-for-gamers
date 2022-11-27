@@ -18,7 +18,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    //width: 480px;
+    width: 480px;
     margin: 0 auto;
     padding-top: 40px;
     padding-bottom: 48px;
@@ -64,15 +64,15 @@
 
 .blar-contekst {
   @media screen and (min-width: 320px) {
-    width: 480px;
+    //width: 480px;
     margin: 0 auto;
   }
   @include tablet {
-    width: 768px;
+    //width: 768px;
     margin: 0 auto;
   }
   @include desktop {
-    width: 1280px;
+    min-width: 1280px;
     margin: 0 auto;
   }
 }
