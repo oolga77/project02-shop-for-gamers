@@ -6,7 +6,7 @@
   }
   @media screen and (min-width: 768px) {
     max-width: 1280;
-    padding: 290px 340px 208px 40px;
+    padding: 290px 340px 208px 4%;
   }
   @media screen and (min-width: 1280px) {
     padding: 316px 702px 209px 142px;
@@ -65,8 +65,8 @@
   }
   @media screen and (min-width: 1280px) {
     background-image: url(../images/img-hero/hero-desk-1-min.png);
-    background-position: top 50px right 100px;
-    background-size: 600px;
+    background-position: top 100px right 50px;
+    background-size: 700px;
     @include retina {
       background-image: url(../images/img-hero/hero-desk-2-min.png);
     }
@@ -92,7 +92,7 @@
   @media screen and (min-width: 768px) {
     font-size: 56px;
     margin: 0;
-    max-width: 436px;
+    max-width: 700px;
   }
   @media screen and (min-width: 1280px) {
     max-width: 436px;
