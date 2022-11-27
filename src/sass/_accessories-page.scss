@@ -64,6 +64,9 @@
     padding-bottom: 16px;
     flex-basis: auto;
   }
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .accessories-button:hover,
 .accessories-button:focus {
