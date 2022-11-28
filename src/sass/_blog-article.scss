@@ -68,7 +68,7 @@
     margin: 0 auto;
   }
   @include tablet {
-    //width: 768px;
+    width: 768px;
     margin: 0 auto;
   }
   @include desktop {
@@ -98,7 +98,7 @@
     padding-bottom: 30px;
   }
   @include desktop {
-    width: 1280px;
+    width: 1180px;
     margin-left: 40px;
   }
 }
