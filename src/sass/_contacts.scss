@@ -559,7 +559,7 @@ display: block;
 .contacts-bottom{
     @media screen and (min-width: 480px) {
             
-            max-width: 288px;
+            max-width: 443px;
         }
 
                 @media screen and (min-width: 768px) {
@@ -617,7 +617,7 @@ display: block;
     font-size: 16px;
     line-height: 1.25;
     color: var(--text-color);
-    width: 288px;
+    width: 443px;
 
         @media screen and (min-width: 768px) {
             width: 543px;
@@ -665,7 +665,7 @@ display: block;
 
 textarea {
     resize: none;
-    width: 289px;
+    width: 443px;
     height: 95px;
     padding-left: 16px;
     background-color: transparent;
@@ -676,7 +676,6 @@ textarea {
             height: 120px;
             width: 543px;
         }
-    
     
     cursor: pointer;
     padding: 12px 16px;
